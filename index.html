@@ -1421,7 +1421,7 @@
       /* Cards stagger */
       gsap.from('.card',
         {
-          opacity: 0, y: 48,
+          y: 48,
           duration: 0.75, stagger: 0.13, ease: 'power3.out',
           scrollTrigger: { trigger: '.cards-grid', start: 'top 80%' }
         }
@@ -1430,7 +1430,7 @@
       /* Steps stagger */
       gsap.from('.step',
         {
-          opacity: 0, y: 36,
+          y: 36,
           duration: 0.65, stagger: 0.1, ease: 'power3.out',
           scrollTrigger: { trigger: '.proceso-steps', start: 'top 82%' }
         }
@@ -1439,7 +1439,7 @@
       /* Footer fade */
       gsap.from('footer',
         {
-          opacity: 0,
+          y: 20,
           duration: 0.8, ease: 'power2.out',
           scrollTrigger: { trigger: 'footer', start: 'top 90%' }
         }
