@@ -252,11 +252,11 @@
     }
     .navbar .container {
       display: grid;
-      grid-template-columns: 1fr auto 1fr;
+      grid-template-columns: auto 1fr auto;
       align-items: center;
     }
     .nav-left { display: flex; align-items: center; justify-content: flex-start; }
-    .nav-center { display: flex; align-items: center; justify-content: center; }
+    .nav-center { display: none; }
     .nav-right-desktop { display: flex; align-items: center; justify-content: flex-end; gap: 20px; }
 
     /* Logo */
@@ -267,7 +267,7 @@
       opacity: 0; /* animated in */
     }
     .logo-mark {
-      width: 64px; height: 64px;
+      width: 72px; height: 72px;
       display: flex; align-items: center; justify-content: center;
       flex-shrink: 0;
     }
@@ -280,8 +280,8 @@
     .logo-info strong {
       font-family: var(--f-disp);
       font-weight: 900;
-      font-size: 1.25rem;
-      letter-spacing: 0.12em;
+      font-size: 1.15rem;
+      letter-spacing: 0.1em;
       text-transform: uppercase;
     }
     .logo-info small {
@@ -294,8 +294,8 @@
     .nav-right {
       display: flex;
       align-items: center;
-      gap: 28px;
-      opacity: 0; /* animated in */
+      justify-content: flex-end;
+      gap: 12px;
     }
     .nav-ig {
       display: flex; align-items: center; gap: 6px;
@@ -934,9 +934,9 @@
     @media (max-width: 768px) {
       .nav-right-desktop { display: none !important; }
       .navbar .container { grid-template-columns: auto 1fr auto; }
-      .logo-mark { width: 52px; height: 52px; }
-      .logo-info strong { font-size: 1.05rem; letter-spacing: 0.1em; }
-      .logo-info small { font-size: 0.6rem; letter-spacing: 0.18em; }
+      .logo-mark { width: 58px; height: 58px; }
+      .logo-info strong { font-size: 1.1rem; letter-spacing: 0.08em; }
+      .logo-info small { font-size: 0.58rem; letter-spacing: 0.16em; }
       .offcanvas-menu { width: 100%; max-width: 100%; padding: 90px 28px 28px; }
       .offcanvas-menu a { font-size: 1.35rem; padding: 12px 0; }
     }
@@ -1006,9 +1006,9 @@
       .card { padding: 28px 20px; }
       .card h3 { font-size: 1.4rem; }
       .ticker { font-size: 0.75rem; padding: 14px 0; }
-      .logo-mark { width: 56px; height: 56px; }
-      .logo-info strong { font-size: 1.15rem; }
-      .logo-info small { font-size: 0.65rem; }
+      .logo-mark { width: 64px; height: 64px; }
+      .logo-info strong { font-size: 1.2rem; }
+      .logo-info small { font-size: 0.62rem; }
     }
 
     @media (max-width: 400px) {
@@ -1040,37 +1040,39 @@
   <header>
     <nav class="navbar" id="navbar" aria-label="Navegación principal">
       <div class="container">
-        <!-- Izquierda: hamburguesa -->
+        <!-- Izquierda: logo -->
         <div class="nav-left">
+          <a class="logo" href="/" aria-label="OC Garage — Inicio">
+            <div class="logo-mark" aria-hidden="true"><img src="assets/logo.png" alt="" aria-hidden="true"></div>
+            <div class="logo-info">
+              <strong>OC GARAGE</strong>
+              <small>CHAPA Y PINTURA</small>
+              <small style="font-size:0.65rem;letter-spacing:0.18em;margin-top:1px;">MDQ</small>
+            </div>
+          </a>
+        </div>
+
+        <!-- Centro: vacío -->
+        <div class="nav-center"></div>
+
+        <!-- Derecha: CTA (desktop) + hamburguesa (siempre) -->
+        <div class="nav-right">
+          <div class="nav-right-desktop">
+            <a class="nav-ig" href="https://instagram.com/ocgarage.mdp" target="_blank" rel="noopener noreferrer" aria-label="Seguinos en Instagram">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="2" width="20" height="20" rx="5"/>
+                <circle cx="12" cy="12" r="4"/>
+                <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+              </svg>
+              @ocgarage.mdp
+            </a>
+            <a class="btn btn-red" href="https://wa.me/5492236856543?text=Hola!%20Quiero%20consultar%20un%20presupuesto" target="_blank" rel="noopener noreferrer">Presupuesto</a>
+          </div>
           <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
             <span></span>
             <span></span>
             <span></span>
           </button>
-        </div>
-
-        <!-- Centro: logo -->
-        <div class="nav-center">
-          <a class="logo" href="/" aria-label="OC Garage — Inicio">
-            <div class="logo-mark" aria-hidden="true"><img src="assets/logo.png" alt="" aria-hidden="true"></div>
-            <div class="logo-info">
-              <strong>Garage</strong>
-              <small>Chapa · Pintura · MDP</small>
-            </div>
-          </a>
-        </div>
-
-        <!-- Derecha: CTA -->
-        <div class="nav-right-desktop">
-          <a class="nav-ig" href="https://instagram.com/ocgarage.mdp" target="_blank" rel="noopener noreferrer" aria-label="Seguinos en Instagram">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <rect x="2" y="2" width="20" height="20" rx="5"/>
-              <circle cx="12" cy="12" r="4"/>
-              <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
-            </svg>
-            @ocgarage.mdp
-          </a>
-          <a class="btn btn-red" href="https://wa.me/5492236856543?text=Hola!%20Quiero%20consultar%20un%20presupuesto" target="_blank" rel="noopener noreferrer">Presupuesto</a>
         </div>
       </div>
     </nav>
@@ -1324,8 +1326,9 @@
           <a class="logo" href="/" aria-label="OC Garage — Inicio" style="opacity:1">
             <div class="logo-mark" aria-hidden="true"><img src="assets/logo.png" alt="" aria-hidden="true"></div>
             <div class="logo-info">
-              <strong>Garage</strong>
-              <small>Chapa · Pintura · MDP</small>
+              <strong>OC GARAGE</strong>
+              <small>CHAPA Y PINTURA</small>
+              <small style="font-size:0.65rem;letter-spacing:0.18em;margin-top:1px;">MDQ</small>
             </div>
           </a>
           <p>Taller de referencia en chapa y pintura para aseguradoras y particulares en Mar del Plata. Calidad técnica, documentación profesional y plazos cumplidos.</p>
