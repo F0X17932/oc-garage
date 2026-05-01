@@ -250,6 +250,14 @@
       position: relative;
       z-index: 1;
     }
+    .navbar .container {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      align-items: center;
+    }
+    .nav-left { display: flex; align-items: center; justify-content: flex-start; }
+    .nav-center { display: flex; align-items: center; justify-content: center; }
+    .nav-right-desktop { display: flex; align-items: center; justify-content: flex-end; gap: 20px; }
 
     /* Logo */
     .logo {
@@ -816,9 +824,9 @@
     /* ══════════════════════════════════════
        RESPONSIVE
     ══════════════════════════════════════ */
-    /* MOBILE MENU */
+    /* OFF-CANVAS MENU */
     .nav-toggle {
-      display: none;
+      display: flex;
       flex-direction: column;
       gap: 5px;
       background: none;
@@ -838,34 +846,94 @@
     .nav-toggle.active span:nth-child(2) { opacity: 0; }
     .nav-toggle.active span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
 
-    .mobile-menu {
-      display: none;
+    /* Overlay */
+    .offcanvas-overlay {
       position: fixed;
       inset: 0;
-      background: rgba(12,12,12,0.98);
-      backdrop-filter: blur(20px);
+      background: rgba(12,12,12,0.6);
+      backdrop-filter: blur(4px);
+      z-index: 998;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.4s ease, visibility 0.4s ease;
+    }
+    .offcanvas-overlay.active { opacity: 1; visibility: visible; }
+
+    /* Off-canvas panel */
+    .offcanvas-menu {
+      position: fixed;
+      top: 0; right: 0; bottom: 0;
+      width: 33vw;
+      min-width: 320px;
+      max-width: 480px;
+      background: var(--c-dark);
+      border-left: 1px solid rgba(255,255,255,0.06);
       z-index: 999;
+      display: flex;
       flex-direction: column;
+      padding: 100px 40px 40px;
+      gap: 6px;
+      transform: translateX(100%);
+      transition: transform 0.5s var(--ease-out-expo);
+    }
+    .offcanvas-menu.active { transform: translateX(0); }
+
+    .offcanvas-close {
+      position: absolute;
+      top: 28px;
+      right: 32px;
+      width: 44px;
+      height: 44px;
+      display: flex;
       align-items: center;
       justify-content: center;
-      gap: 32px;
-      padding: 80px 24px;
+      background: var(--c-red);
+      border: none;
+      border-radius: 2px;
+      cursor: pointer;
+      z-index: 1000;
+      transition: background 0.2s, transform 0.2s;
     }
-    .mobile-menu.active { display: flex; }
-    .mobile-menu a {
+    .offcanvas-close:hover { background: var(--c-red-dk); transform: scale(1.05); }
+    .offcanvas-close svg {
+      width: 18px;
+      height: 18px;
+      stroke: #fff;
+      stroke-width: 2.5;
+      stroke-linecap: round;
+    }
+
+    .offcanvas-menu a {
       font-family: var(--f-disp);
-      font-size: 1.5rem;
+      font-size: 1.6rem;
       font-weight: 700;
-      letter-spacing: 0.08em;
+      letter-spacing: 0.06em;
       text-transform: uppercase;
       color: var(--c-light);
-      transition: color 0.2s;
+      padding: 14px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      transition: color 0.2s, padding-left 0.2s;
     }
-    .mobile-menu a:hover { color: var(--c-red); }
-    .mobile-menu .btn-red {
+    .offcanvas-menu a:hover { color: var(--c-red); padding-left: 8px; }
+    .offcanvas-menu .btn-red {
       font-size: 1.1rem;
       padding: 18px 40px;
-      margin-top: 16px;
+      margin-top: 24px;
+      text-align: center;
+      justify-content: center;
+    }
+    .offcanvas-footer {
+      margin-top: auto;
+      padding-top: 32px;
+      border-top: 1px solid rgba(255,255,255,0.06);
+      font-size: 0.75rem;
+      color: var(--c-mid);
+      letter-spacing: 0.1em;
+    }
+
+    @media (max-width: 768px) {
+      .offcanvas-menu { width: 100%; max-width: 100%; padding: 90px 28px 28px; }
+      .offcanvas-menu a { font-size: 1.35rem; padding: 12px 0; }
     }
 
     @media (max-width: 900px) {
@@ -897,8 +965,6 @@
     }
 
     @media (max-width: 768px) {
-      .nav-toggle { display: flex; }
-      .nav-right { display: none !important; }
       .hero { min-height: auto; padding: 140px 0 60px; }
       .hero .container { gap: 40px; }
       .hero h1 { font-size: clamp(42px, 13vw, 72px); line-height: 0.92; }
@@ -969,14 +1035,28 @@
   <header>
     <nav class="navbar" id="navbar" aria-label="Navegación principal">
       <div class="container">
-        <a class="logo" href="/" aria-label="OC Garage — Inicio">
-          <div class="logo-mark" aria-hidden="true"><img src="assets/logo.png" alt="" aria-hidden="true"></div>
-          <div class="logo-info">
-            <strong>Garage</strong>
-            <small>Chapa · Pintura · MDP</small>
-          </div>
-        </a>
-        <div class="nav-right">
+        <!-- Izquierda: hamburguesa -->
+        <div class="nav-left">
+          <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+
+        <!-- Centro: logo -->
+        <div class="nav-center">
+          <a class="logo" href="/" aria-label="OC Garage — Inicio">
+            <div class="logo-mark" aria-hidden="true"><img src="assets/logo.png" alt="" aria-hidden="true"></div>
+            <div class="logo-info">
+              <strong>Garage</strong>
+              <small>Chapa · Pintura · MDP</small>
+            </div>
+          </a>
+        </div>
+
+        <!-- Derecha: CTA -->
+        <div class="nav-right-desktop">
           <a class="nav-ig" href="https://instagram.com/ocgarage.mdp" target="_blank" rel="noopener noreferrer" aria-label="Seguinos en Instagram">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
               <rect x="2" y="2" width="20" height="20" rx="5"/>
@@ -987,21 +1067,27 @@
           </a>
           <a class="btn btn-red" href="https://wa.me/5492236856543?text=Hola!%20Quiero%20consultar%20un%20presupuesto" target="_blank" rel="noopener noreferrer">Presupuesto</a>
         </div>
-        <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
       </div>
     </nav>
   </header>
 
-  <!-- Mobile menu -->
-  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+  <!-- Off-canvas overlay -->
+  <div class="offcanvas-overlay" id="offcanvasOverlay"></div>
+
+  <!-- Off-canvas menu -->
+  <div class="offcanvas-menu" id="offcanvasMenu" aria-hidden="true">
+    <button class="offcanvas-close" id="offcanvasClose" aria-label="Cerrar menú">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <line x1="6" y1="6" x2="18" y2="18"/>
+        <line x1="18" y1="6" x2="6" y2="18"/>
+      </svg>
+    </button>
     <a href="#servicios">Servicios</a>
     <a href="#proceso">Proceso</a>
+    <a href="#contacto">Contacto</a>
     <a href="https://instagram.com/ocgarage.mdp" target="_blank" rel="noopener noreferrer">Instagram</a>
     <a class="btn btn-red" href="https://wa.me/5492236856543?text=Hola!%20Quiero%20consultar%20un%20presupuesto" target="_blank" rel="noopener noreferrer">Pedir Presupuesto</a>
+    <div class="offcanvas-footer">Mar del Plata · Est. 1997</div>
   </div>
 
   <main>
@@ -1460,25 +1546,41 @@
       });
     }
 
-    /* Mobile menu toggle */
+    /* Off-canvas menu toggle */
     const navToggle = document.getElementById('navToggle');
-    const mobileMenu = document.getElementById('mobileMenu');
-    if (navToggle && mobileMenu) {
+    const offcanvasMenu = document.getElementById('offcanvasMenu');
+    const offcanvasOverlay = document.getElementById('offcanvasOverlay');
+    const offcanvasClose = document.getElementById('offcanvasClose');
+
+    function openOffcanvas() {
+      offcanvasMenu.classList.add('active');
+      offcanvasOverlay.classList.add('active');
+      navToggle.classList.add('active');
+      navToggle.setAttribute('aria-expanded', 'true');
+      offcanvasMenu.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeOffcanvas() {
+      offcanvasMenu.classList.remove('active');
+      offcanvasOverlay.classList.remove('active');
+      navToggle.classList.remove('active');
+      navToggle.setAttribute('aria-expanded', 'false');
+      offcanvasMenu.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+    }
+
+    if (navToggle && offcanvasMenu) {
       navToggle.addEventListener('click', () => {
-        const isOpen = mobileMenu.classList.toggle('active');
-        navToggle.classList.toggle('active');
-        navToggle.setAttribute('aria-expanded', isOpen);
-        mobileMenu.setAttribute('aria-hidden', !isOpen);
-        document.body.style.overflow = isOpen ? 'hidden' : '';
+        const isOpen = offcanvasMenu.classList.contains('active');
+        isOpen ? closeOffcanvas() : openOffcanvas();
       });
-      mobileMenu.querySelectorAll('a').forEach(link => {
-        link.addEventListener('click', () => {
-          mobileMenu.classList.remove('active');
-          navToggle.classList.remove('active');
-          navToggle.setAttribute('aria-expanded', 'false');
-          mobileMenu.setAttribute('aria-hidden', 'true');
-          document.body.style.overflow = '';
-        });
+      offcanvasClose.addEventListener('click', closeOffcanvas);
+      offcanvasOverlay.addEventListener('click', closeOffcanvas);
+      offcanvasMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', closeOffcanvas);
+      });
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && offcanvasMenu.classList.contains('active')) closeOffcanvas();
       });
     }
 
