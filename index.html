@@ -1,1604 +1,1787 @@
-<!DOCTYPE html>
-<html lang="es-AR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
-  <!-- SEO PRIMARY -->
-  <title>OC Garage · Taller de Chapa y Pintura Profesional en Mar del Plata | Aseguradoras y Particulares</title>
-  <meta name="description" content="Taller especializado en chapa y pintura en Mar del Plata. Referentes en el sector asegurador con amplia trayectoria en reparación automotriz. Calidad técnica, documentación profesional y plazos cumplidos." />
-  <meta name="keywords" content="chapa y pintura aseguradoras Mar del Plata, taller autorizado aseguradoras MDP, reparación automotriz profesional Mar del Plata, chapa y pintura Mar del Plata, taller automotriz Mar del Plata, perito aseguradora Mar del Plata" />
-  <meta name="author" content="OC Garage" />
-  <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://ocgaragemdq.com/" />
-
-  <!-- OPEN GRAPH -->
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://ocgaragemdq.com/" />
-  <meta property="og:title" content="OC Garage · Taller de Chapa y Pintura Profesional | Mar del Plata" />
-  <meta property="og:description" content="Taller de referencia para aseguradoras y particulares en Mar del Plata. Calidad técnica, documentación profesional y entrega garantizada." />
-  <meta property="og:image" content="https://oc-garage.vercel.app/assets/og-image.png" />
-  <meta property="og:image:width" content="1536" />
-  <meta property="og:image:height" content="1024" />
-  <meta property="og:locale" content="es_AR" />
-  <meta property="og:site_name" content="OC Garage" />
-
-  <!-- TWITTER CARD -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="OC Garage · Taller de Chapa y Pintura Profesional | Mar del Plata" />
-  <meta name="twitter:description" content="Taller de referencia para aseguradoras y particulares. Calidad técnica, documentación y plazos cumplidos en Mar del Plata." />
-  <meta name="twitter:image" content="https://oc-garage.vercel.app/assets/og-image.png" />
-
-  <!-- SCHEMA.ORG -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "AutoBodyShop",
-    "name": "OC Garage",
-    "alternateName": "OC Garage Chapa y Pintura",
-    "description": "Taller especializado en chapa y pintura en Mar del Plata con amplia trayectoria en el sector asegurador. Calidad técnica, documentación profesional y plazos cumplidos.",
-    "slogan": "Calidad técnica que respalda cada trabajo",
-    "url": "https://ocgaragemdq.com",
-    "telephone": "+5492236856543",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Mar del Plata",
-      "addressRegion": "Buenos Aires",
-      "addressCountry": "AR"
-    },
-    "sameAs": [],
-    "priceRange": "$$",
-    "areaServed": { "@type": "City", "name": "Mar del Plata" },
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Servicios de Chapa y Pintura",
-      "itemListElement": [
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Chapa automotriz" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Pintura automotriz" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Reparación de abolladuras" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Pintura completa del vehículo" } }
-      ]
-    }
-  }
-  </script>
-
-  <!-- FONTS -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;900&family=Work+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
-
-  <style>
-    /* ══════════════════════════════════════
-       VARIABLES & RESET
-    ══════════════════════════════════════ */
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    :root {
-      --c-black:   #0C0C0C;
-      --c-dark:    #141414;
-      --c-dark-2:  #1E1E1E;
-      --c-dark-3:  #2A2A2A;
-      --c-mid:     #7A7A7A;
-      --c-light:   #EFEFEF;
-      --c-red:     #C01820;
-      --c-red-dk:  #9A1219;
-      --c-red-glow:rgba(192,24,32,0.18);
-      --f-disp:    'Big Shoulders Display', sans-serif;
-      --f-body:    'Work Sans', sans-serif;
-      --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
-    }
-
-    html {
-      scroll-behavior: smooth;
-      cursor: none;
-    }
-    @media (hover: none) { html { cursor: auto; } }
-
-    body {
-      background: var(--c-black);
-      color: var(--c-light);
-      font-family: var(--f-body);
-      font-size: 16px;
-      line-height: 1.6;
-      -webkit-font-smoothing: antialiased;
-      overflow-x: hidden;
-    }
-    a, button { cursor: none; }
-    @media (hover: none) { a, button { cursor: auto; } }
-
-    img { display: block; max-width: 100%; }
-    a { color: inherit; text-decoration: none; }
-
-    .container {
-      width: 100%;
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 32px;
-    }
-
-    /* ══════════════════════════════════════
-       CUSTOM CURSOR
-    ══════════════════════════════════════ */
-    #cursor-dot,
-    #cursor-ring {
-      position: fixed;
-      border-radius: 50%;
-      pointer-events: none;
-      z-index: 9999;
-      transform: translate(-50%, -50%);
-      transition: opacity 0.3s;
-    }
-    #cursor-dot {
-      width: 6px; height: 6px;
-      background: var(--c-red);
-      top: 0; left: 0;
-    }
-    #cursor-ring {
-      width: 36px; height: 36px;
-      border: 1.5px solid rgba(192,24,32,0.5);
-      top: 0; left: 0;
-      transition: width 0.25s var(--ease-out-expo),
-                  height 0.25s var(--ease-out-expo),
-                  border-color 0.25s;
-    }
-    #cursor-ring.hover {
-      width: 56px; height: 56px;
-      border-color: var(--c-red);
-    }
-    @media (hover: none) {
-      #cursor-dot, #cursor-ring { display: none; }
-    }
-
-    /* ══════════════════════════════════════
-       GRAIN TEXTURE
-    ══════════════════════════════════════ */
-    .grain {
-      position: fixed;
-      inset: -200%;
-      width: 400%; height: 400%;
-      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
-      background-repeat: repeat;
-      background-size: 256px 256px;
-      opacity: 0.028;
-      pointer-events: none;
-      z-index: 1000;
-      animation: grain-shift 0.8s steps(1) infinite;
-    }
-    @keyframes grain-shift {
-      0%   { transform: translate(0,0); }
-      10%  { transform: translate(-3%,-3%); }
-      20%  { transform: translate(3%,3%); }
-      30%  { transform: translate(-3%,1%); }
-      40%  { transform: translate(1%,-3%); }
-      50%  { transform: translate(-1%,3%); }
-      60%  { transform: translate(3%,-1%); }
-      70%  { transform: translate(-3%,3%); }
-      80%  { transform: translate(3%,-3%); }
-      90%  { transform: translate(-1%,1%); }
-      100% { transform: translate(3%,1%); }
-    }
-
-    /* ══════════════════════════════════════
-       BUTTONS
-    ══════════════════════════════════════ */
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      padding: 15px 30px;
-      font-family: var(--f-disp);
-      font-size: 0.9rem;
-      font-weight: 700;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      border: none;
-      border-radius: 2px;
-      position: relative;
-      overflow: hidden;
-      transition: transform 0.2s var(--ease-out-expo);
-    }
-    .btn::after {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: rgba(255,255,255,0.07);
-      opacity: 0;
-      transition: opacity 0.2s;
-    }
-    .btn:hover { transform: translateY(-3px); }
-    .btn:hover::after { opacity: 1; }
-
-    .btn-red  { background: var(--c-red); color: #fff; }
-    .btn-red:hover { box-shadow: 0 12px 32px rgba(192,24,32,0.4); }
-
-    .btn-ghost {
-      background: transparent;
-      color: var(--c-light);
-      border: 1px solid rgba(255,255,255,0.2);
-    }
-    .btn-ghost:hover { border-color: rgba(255,255,255,0.6); }
-
-    .btn-wa   { background: #25D366; color: #fff; }
-    .btn-wa:hover { box-shadow: 0 12px 32px rgba(37,211,102,0.35); }
-
-    /* ══════════════════════════════════════
-       NAVBAR
-    ══════════════════════════════════════ */
-    .navbar {
-      position: fixed;
-      top: 0; left: 0; right: 0;
-      z-index: 500;
-      padding: 24px 0;
-    }
-    .navbar::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: rgba(12,12,12,0);
-      backdrop-filter: blur(0px);
-      transition: background 0.4s, backdrop-filter 0.4s;
-      pointer-events: none;
-    }
-    .navbar.scrolled::before {
-      background: rgba(12,12,12,0.88);
-      backdrop-filter: blur(16px);
-    }
-    .navbar.scrolled { padding: 16px 0; border-bottom: 1px solid rgba(255,255,255,0.05); }
-    .navbar .container {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      position: relative;
-      z-index: 1;
-    }
-    .navbar .container {
-      display: grid;
-      grid-template-columns: auto 1fr auto;
-      align-items: center;
-    }
-    .nav-left { display: flex; align-items: center; justify-content: flex-start; }
-    .nav-center { display: none; }
-    .nav-right-desktop { display: flex; align-items: center; justify-content: flex-end; gap: 20px; }
-
-    /* Logo */
-    .logo {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      opacity: 0; /* animated in */
-    }
-    .logo-mark {
-      width: 110px; height: 110px;
-      display: flex; align-items: center; justify-content: center;
-      flex-shrink: 0;
-    }
-    .logo-mark img {
-      width: 100%; height: 100%;
-      object-fit: contain;
-      display: block;
-    }
-    .logo-info { display: flex; flex-direction: column; line-height: 1.1; }
-    .logo-info strong {
-      font-family: var(--f-disp);
-      font-weight: 900;
-      font-size: 1.15rem;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-    }
-    .logo-info small {
-      font-size: 0.7rem;
-      letter-spacing: 0.22em;
-      text-transform: uppercase;
-      color: var(--c-mid);
-    }
-
-    .nav-right {
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
-      gap: 12px;
-    }
-    .nav-ig {
-      display: flex; align-items: center; gap: 6px;
-      font-size: 0.78rem; letter-spacing: 0.06em;
-      color: var(--c-mid);
-      transition: color 0.2s;
-    }
-    .nav-ig:hover { color: var(--c-light); }
-
-    /* ══════════════════════════════════════
-       HERO
-    ══════════════════════════════════════ */
-    .hero {
-      position: relative;
-      min-height: 100svh;
-      display: flex;
-      align-items: flex-end;
-      overflow: hidden;
-    }
-
-    /* Grid lines background */
-    .hero-grid {
-      position: absolute;
-      inset: 0;
-      background-image:
-        linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
-      background-size: 80px 80px;
-      z-index: 0;
-      mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 30%, transparent 100%);
-    }
-
-    /* Red glow */
-    .hero-glow {
-      position: absolute;
-      top: 15%; right: -5%;
-      width: 700px; height: 700px;
-      background: radial-gradient(circle, rgba(192,24,32,0.15) 0%, transparent 65%);
-      z-index: 0;
-      pointer-events: none;
-    }
-
-    /* OC watermark */
-    .hero-wm {
-      position: absolute;
-      top: 42%;
-      left: 72%;
-      transform: translate(-50%, -50%);
-      width: clamp(480px, 72vw, 900px);
-      height: clamp(480px, 72vw, 900px);
-      opacity: 0.04;
-      pointer-events: none;
-      user-select: none;
-      z-index: 0;
-    }
-    .hero-wm img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-      display: block;
-    }
-
-    /* Diagonal accent */
-    .hero-line {
-      position: absolute;
-      top: 0; right: 22%;
-      width: 1px;
-      height: 100%;
-      background: linear-gradient(to bottom, transparent, rgba(192,24,32,0.3) 40%, transparent);
-      z-index: 0;
-    }
-
-    .hero .container {
-      position: relative;
-      z-index: 1;
-      padding-bottom: 80px;
-      padding-top: 120px;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 0 64px;
-      align-items: end;
-    }
-
-    .hero-left {}
-
-    .hero-tag {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      font-size: 0.7rem;
-      font-weight: 600;
-      letter-spacing: 0.28em;
-      text-transform: uppercase;
-      color: var(--c-red);
-      margin-bottom: 28px;
-      overflow: hidden;
-    }
-    .hero-tag::before {
-      content: '';
-      display: block;
-      width: 28px; height: 1.5px;
-      background: var(--c-red);
-      transform: scaleX(0);
-      transform-origin: left;
-    }
-
-    /* Text reveal wrapper */
-    .reveal-line {
-      overflow: hidden;
-      display: block;
-    }
-
-    .hero h1 {
-      font-family: var(--f-disp);
-      font-weight: 900;
-      font-size: clamp(60px, 9vw, 120px);
-      line-height: 0.88;
-      letter-spacing: -0.01em;
-      text-transform: uppercase;
-      color: var(--c-light);
-      margin-bottom: 36px;
-    }
-    .hero h1 em {
-      font-style: normal;
-      color: var(--c-red);
-    }
-
-    .hero-sub {
-      font-size: 1rem;
-      color: var(--c-mid);
-      line-height: 1.75;
-      margin-bottom: 40px;
-      max-width: 380px;
-    }
-
-    .hero-ctas {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-    }
-
-    /* Right col: stats */
-    .hero-right {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      gap: 1px;
-      padding-left: 40px;
-      border-left: 1px solid rgba(255,255,255,0.07);
-    }
-
-    .stat-block {
-      padding: 28px 0;
-      border-bottom: 1px solid rgba(255,255,255,0.06);
-    }
-    .stat-block:first-child { border-top: 1px solid rgba(255,255,255,0.06); }
-
-    .stat-num {
-      font-family: var(--f-disp);
-      font-weight: 900;
-      font-size: clamp(3rem, 5vw, 4.5rem);
-      line-height: 1;
-      color: var(--c-light);
-      display: flex;
-      align-items: baseline;
-      gap: 2px;
-    }
-    .stat-num sup {
-      font-size: 0.45em;
-      color: var(--c-red);
-      font-weight: 900;
-    }
-    .stat-label {
-      font-size: 0.72rem;
-      letter-spacing: 0.16em;
-      text-transform: uppercase;
-      color: var(--c-mid);
-      margin-top: 6px;
-    }
-
-    /* ══════════════════════════════════════
-       TICKER / PILARES
-    ══════════════════════════════════════ */
-    .ticker-wrap {
-      background: var(--c-red);
-      padding: 16px 0;
-      overflow: hidden;
-      position: relative;
-    }
-    .ticker-track {
-      display: flex;
-      white-space: nowrap;
-      will-change: transform;
-    }
-    .ticker-item {
-      display: inline-flex;
-      align-items: center;
-      gap: 20px;
-      padding: 0 32px;
-      font-family: var(--f-disp);
-      font-weight: 700;
-      font-size: 0.82rem;
-      letter-spacing: 0.22em;
-      text-transform: uppercase;
-      color: #fff;
-      flex-shrink: 0;
-    }
-    .ticker-sep {
-      width: 4px; height: 4px;
-      background: rgba(255,255,255,0.5);
-      border-radius: 50%;
-      flex-shrink: 0;
-    }
-
-    /* ══════════════════════════════════════
-       SERVICIOS
-    ══════════════════════════════════════ */
-    .servicios {
-      padding: 120px 0;
-    }
-
-    .section-head {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 40px 80px;
-      align-items: end;
-      margin-bottom: 72px;
-    }
-
-    .s-tag {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      font-size: 0.68rem;
-      font-weight: 600;
-      letter-spacing: 0.28em;
-      text-transform: uppercase;
-      color: var(--c-red);
-      margin-bottom: 14px;
-    }
-    .s-tag::before {
-      content: '';
-      display: block;
-      width: 24px; height: 1.5px;
-      background: var(--c-red);
-    }
-
-    .s-title {
-      font-family: var(--f-disp);
-      font-weight: 900;
-      font-size: clamp(40px, 5.5vw, 68px);
-      line-height: 0.9;
-      text-transform: uppercase;
-    }
-    .s-title em { font-style: normal; color: var(--c-red); }
-
-    .s-desc {
-      font-size: 0.95rem;
-      color: var(--c-mid);
-      line-height: 1.75;
-      align-self: end;
-    }
-
-    /* Cards */
-    .cards-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 2px;
-    }
-
-    .card {
-      background: var(--c-dark-2);
-      padding: 48px 40px;
-      position: relative;
-      overflow: hidden;
-      transition: background 0.3s;
-    }
-    .card::before {
-      content: '';
-      position: absolute;
-      bottom: 0; left: 0;
-      width: 100%; height: 2px;
-      background: var(--c-red);
-      transform: scaleX(0);
-      transform-origin: left;
-      transition: transform 0.4s var(--ease-out-expo);
-    }
-    .card::after {
-      content: '';
-      position: absolute;
-      top: 0; right: 0;
-      width: 140px; height: 140px;
-      background: radial-gradient(circle, var(--c-red-glow), transparent 70%);
-      opacity: 0;
-      transition: opacity 0.4s;
-      pointer-events: none;
-    }
-    .card:hover { background: var(--c-dark-3); }
-    .card:hover::before { transform: scaleX(1); }
-    .card:hover::after { opacity: 1; }
-
-    .card-num {
-      font-family: var(--f-disp);
-      font-weight: 900;
-      font-size: 5rem;
-      line-height: 1;
-      color: rgba(192,24,32,0.1);
-      position: absolute;
-      top: 24px; right: 28px;
-      transition: color 0.3s;
-    }
-    .card:hover .card-num { color: rgba(192,24,32,0.2); }
-
-    .card-icon {
-      width: 48px; height: 48px;
-      border: 1px solid rgba(192,24,32,0.3);
-      border-radius: 2px;
-      display: flex; align-items: center; justify-content: center;
-      color: var(--c-red);
-      margin-bottom: 28px;
-      transition: background 0.3s, border-color 0.3s;
-    }
-    .card:hover .card-icon {
-      background: rgba(192,24,32,0.1);
-      border-color: var(--c-red);
-    }
-
-    .card-title {
-      font-family: var(--f-disp);
-      font-weight: 900;
-      font-size: 1.65rem;
-      text-transform: uppercase;
-      letter-spacing: 0.02em;
-      margin-bottom: 14px;
-    }
-    .card-desc {
-      font-size: 0.88rem;
-      color: var(--c-mid);
-      line-height: 1.75;
-      margin-bottom: 28px;
-    }
-    .card-list { list-style: none; display: flex; flex-direction: column; gap: 8px; }
-    .card-list li {
-      display: flex; align-items: center; gap: 10px;
-      font-size: 0.8rem;
-      color: var(--c-mid);
-    }
-    .card-list li::before {
-      content: '';
-      display: block;
-      width: 4px; height: 4px;
-      background: var(--c-red);
-      border-radius: 50%;
-      flex-shrink: 0;
-    }
-
-    /* ══════════════════════════════════════
-       PROCESO (minimal horizontal)
-    ══════════════════════════════════════ */
-    .proceso {
-      padding: 80px 0 120px;
+     1|<!DOCTYPE html>
+     2|<html lang="es-AR">
+     3|<head>
+     4|  <meta charset="UTF-8" />
+     5|  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     6|  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+     7|
+     8|  <!-- SEO PRIMARY -->
+     9|  <title>OC Garage · Taller de Chapa y Pintura Profesional en Mar del Plata | Aseguradoras y Particulares</title>
+    10|  <meta name="description" content="Taller especializado en chapa y pintura en Mar del Plata. Referentes en el sector asegurador con amplia trayectoria en reparación automotriz. Calidad técnica, documentación profesional y plazos cumplidos." />
+    11|  <meta name="keywords" content="chapa y pintura aseguradoras Mar del Plata, taller autorizado aseguradoras MDP, reparación automotriz profesional Mar del Plata, chapa y pintura Mar del Plata, taller automotriz Mar del Plata, perito aseguradora Mar del Plata" />
+    12|  <meta name="author" content="OC Garage" />
+    13|  <meta name="robots" content="index, follow" />
+    14|  <link rel="canonical" href="https://ocgaragemdq.com/" />
+    15|
+    16|  <!-- OPEN GRAPH -->
+    17|  <meta property="og:type" content="website" />
+    18|  <meta property="og:url" content="https://ocgaragemdq.com/" />
+    19|  <meta property="og:title" content="OC Garage · Taller de Chapa y Pintura Profesional | Mar del Plata" />
+    20|  <meta property="og:description" content="Taller de referencia para aseguradoras y particulares en Mar del Plata. Calidad técnica, documentación profesional y entrega garantizada." />
+    21|  <meta property="og:image" content="https://oc-garage.vercel.app/assets/og-image.png" />
+    22|  <meta property="og:image:width" content="1536" />
+    23|  <meta property="og:image:height" content="1024" />
+    24|  <meta property="og:locale" content="es_AR" />
+    25|  <meta property="og:site_name" content="OC Garage" />
+    26|
+    27|  <!-- TWITTER CARD -->
+    28|  <meta name="twitter:card" content="summary_large_image" />
+    29|  <meta name="twitter:title" content="OC Garage · Taller de Chapa y Pintura Profesional | Mar del Plata" />
+    30|  <meta name="twitter:description" content="Taller de referencia para aseguradoras y particulares. Calidad técnica, documentación y plazos cumplidos en Mar del Plata." />
+    31|  <meta name="twitter:image" content="https://oc-garage.vercel.app/assets/og-image.png" />
+    32|
+    33|  <!-- SCHEMA.ORG -->
+    34|  <script type="application/ld+json">
+    35|  {
+    36|    "@context": "https://schema.org",
+    37|    "@type": "AutoBodyShop",
+    38|    "name": "OC Garage",
+    39|    "alternateName": "OC Garage Chapa y Pintura",
+    40|    "description": "Taller especializado en chapa y pintura en Mar del Plata con amplia trayectoria en el sector asegurador. Calidad técnica, documentación profesional y plazos cumplidos.",
+    41|    "slogan": "Calidad técnica que respalda cada trabajo",
+    42|    "url": "https://ocgaragemdq.com",
+    43|    "telephone": "+549****6543",
+    44|    "address": {
+    45|      "@type": "PostalAddress",
+    46|      "addressLocality": "Mar del Plata",
+    47|      "addressRegion": "Buenos Aires",
+    48|      "addressCountry": "AR"
+    49|    },
+    50|    "sameAs": [],
+    51|    "priceRange": "$$",
+    52|    "areaServed": { "@type": "City", "name": "Mar del Plata" },
+    53|    "hasOfferCatalog": {
+    54|      "@type": "OfferCatalog",
+    55|      "name": "Servicios de Chapa y Pintura",
+    56|      "itemListElement": [
+    57|        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Chapa automotriz" } },
+    58|        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Pintura automotriz" } },
+    59|        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Reparación de abolladuras" } },
+    60|        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Pintura completa del vehículo" } }
+    61|      ]
+    62|    }
+    63|  }
+    64|  </script>
+    65|
+    66|  <!-- FONTS -->
+    67|  <link rel="preconnect" href="https://fonts.googleapis.com" />
+    68|  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    69|  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;900&family=Work+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+    70|
+    71|  <style>
+    72|    /* ══════════════════════════════════════
+    73|       VARIABLES & RESET
+    74|    ══════════════════════════════════════ */
+    75|    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    76|
+    77|    :root {
+    78|      --c-black:   #0C0C0C;
+    79|      --c-dark:    #141414;
+    80|      --c-dark-2:  #1E1E1E;
+    81|      --c-dark-3:  #2A2A2A;
+    82|      --c-mid:     #7A7A7A;
+    83|      --c-light:   #EFEFEF;
+    84|      --c-red:     #C01820;
+    85|      --c-red-dk:  #9A1219;
+    86|      --c-red-glow:rgba(192,24,32,0.18);
+    87|      --f-disp:    'Big Shoulders Display', sans-serif;
+    88|      --f-body:    'Work Sans', sans-serif;
+    89|      --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+    90|    }
+    91|
+    92|    html {
+    93|      scroll-behavior: smooth;
+    94|      cursor: none;
+    95|    }
+    96|    @media (hover: none) { html { cursor: auto; } }
+    97|
+    98|    body {
+    99|      background: var(--c-black);
+   100|      color: var(--c-light);
+   101|      font-family: var(--f-body);
+   102|      font-size: 16px;
+   103|      line-height: 1.6;
+   104|      -webkit-font-smoothing: antialiased;
+   105|      overflow-x: hidden;
+   106|    }
+   107|    a, button { cursor: none; }
+   108|    @media (hover: none) { a, button { cursor: auto; } }
+   109|
+   110|    img { display: block; max-width: 100%; }
+   111|    a { color: inherit; text-decoration: none; }
+   112|
+   113|    .container {
+   114|      width: 100%;
+   115|      max-width: 1200px;
+   116|      margin: 0 auto;
+   117|      padding: 0 32px;
+   118|    }
+   119|
+   120|    /* ══════════════════════════════════════
+   121|       CUSTOM CURSOR
+   122|    ══════════════════════════════════════ */
+   123|    #cursor-dot,
+   124|    #cursor-ring {
+   125|      position: fixed;
+   126|      border-radius: 50%;
+   127|      pointer-events: none;
+   128|      z-index: 9999;
+   129|      transform: translate(-50%, -50%);
+   130|      transition: opacity 0.3s;
+   131|    }
+   132|    #cursor-dot {
+   133|      width: 6px; height: 6px;
+   134|      background: var(--c-red);
+   135|      top: 0; left: 0;
+   136|    }
+   137|    #cursor-ring {
+   138|      width: 36px; height: 36px;
+   139|      border: 1.5px solid rgba(192,24,32,0.5);
+   140|      top: 0; left: 0;
+   141|      transition: width 0.25s var(--ease-out-expo),
+   142|                  height 0.25s var(--ease-out-expo),
+   143|                  border-color 0.25s;
+   144|    }
+   145|    #cursor-ring.hover {
+   146|      width: 56px; height: 56px;
+   147|      border-color: var(--c-red);
+   148|    }
+   149|    @media (hover: none) {
+   150|      #cursor-dot, #cursor-ring { display: none; }
+   151|    }
+   152|
+   153|    /* ══════════════════════════════════════
+   154|       GRAIN TEXTURE
+   155|    ══════════════════════════════════════ */
+   156|    .grain {
+   157|      position: fixed;
+   158|      inset: -200%;
+   159|      width: 400%; height: 400%;
+   160|      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+   161|      background-repeat: repeat;
+   162|      background-size: 256px 256px;
+   163|      opacity: 0.028;
+   164|      pointer-events: none;
+   165|      z-index: 1000;
+   166|      animation: grain-shift 0.8s steps(1) infinite;
+   167|    }
+   168|    @keyframes grain-shift {
+   169|      0%   { transform: translate(0,0); }
+   170|      10%  { transform: translate(-3%,-3%); }
+   171|      20%  { transform: translate(3%,3%); }
+   172|      30%  { transform: translate(-3%,1%); }
+   173|      40%  { transform: translate(1%,-3%); }
+   174|      50%  { transform: translate(-1%,3%); }
+   175|      60%  { transform: translate(3%,-1%); }
+   176|      70%  { transform: translate(-3%,3%); }
+   177|      80%  { transform: translate(3%,-3%); }
+   178|      90%  { transform: translate(-1%,1%); }
+   179|      100% { transform: translate(3%,1%); }
+   180|    }
+   181|
+   182|    /* ══════════════════════════════════════
+   183|       BUTTONS
+   184|    ══════════════════════════════════════ */
+   185|    .btn {
+   186|      display: inline-flex;
+   187|      align-items: center;
+   188|      gap: 10px;
+   189|      padding: 15px 30px;
+   190|      font-family: var(--f-disp);
+   191|      font-size: 0.9rem;
+   192|      font-weight: 700;
+   193|      letter-spacing: 0.08em;
+   194|      text-transform: uppercase;
+   195|      border: none;
+   196|      border-radius: 2px;
+   197|      position: relative;
+   198|      overflow: hidden;
+   199|      transition: transform 0.2s var(--ease-out-expo);
+   200|    }
+   201|    .btn::after {
+   202|      content: '';
+   203|      position: absolute;
+   204|      inset: 0;
+   205|      background: rgba(255,255,255,0.07);
+   206|      opacity: 0;
+   207|      transition: opacity 0.2s;
+   208|    }
+   209|    .btn:hover { transform: translateY(-3px); }
+   210|    .btn:hover::after { opacity: 1; }
+   211|
+   212|    .btn-red  { background: var(--c-red); color: #fff; }
+   213|    .btn-red:hover { box-shadow: 0 12px 32px rgba(192,24,32,0.4); }
+   214|
+   215|    .btn-ghost {
+   216|      background: transparent;
+   217|      color: var(--c-light);
+   218|      border: 1px solid rgba(255,255,255,0.2);
+   219|    }
+   220|    .btn-ghost:hover { border-color: rgba(255,255,255,0.6); }
+   221|
+   222|    .btn-wa   { background: #25D366; color: #fff; }
+   223|    .btn-wa:hover { box-shadow: 0 12px 32px rgba(37,211,102,0.35); }
+   224|
+   225|    /* ══════════════════════════════════════
+   226|       NAVBAR
+   227|    ══════════════════════════════════════ */
+   228|    .navbar {
+   229|      position: fixed;
+   230|      top: 0; left: 0; right: 0;
+   231|      z-index: 500;
+   232|      padding: 24px 0;
+   233|    }
+   234|    .navbar::before {
+   235|      content: '';
+   236|      position: absolute;
+   237|      inset: 0;
+   238|      background: rgba(12,12,12,0);
+   239|      backdrop-filter: blur(0px);
+   240|      transition: background 0.4s, backdrop-filter 0.4s;
+   241|      pointer-events: none;
+   242|    }
+   243|    .navbar.scrolled::before {
+   244|      background: rgba(12,12,12,0.88);
+   245|      backdrop-filter: blur(16px);
+   246|    }
+   247|    .navbar.scrolled { padding: 16px 0; border-bottom: 1px solid rgba(255,255,255,0.05); }
+   248|    .navbar .container {
+   249|      display: flex;
+   250|      align-items: center;
+   251|      justify-content: space-between;
+   252|      position: relative;
+   253|      z-index: 1;
+   254|    }
+   255|    .navbar .container {
+   256|      display: grid;
+   257|      grid-template-columns: auto 1fr auto;
+   258|      align-items: center;
+   259|    }
+   260|    .nav-left { display: flex; align-items: center; justify-content: flex-start; }
+   261|    .nav-center { display: none; }
+   262|    .nav-right-desktop { display: flex; align-items: center; justify-content: flex-end; gap: 20px; }
+   263|
+   264|    /* Logo */
+   265|    .logo {
+   266|      display: flex;
+   267|      align-items: center;
+   268|      gap: 12px;
+   269|      opacity: 0; /* animated in */
+   270|    }
+   271|    .logo-mark {
+   272|      width: 110px; height: 110px;
+   273|      display: flex; align-items: center; justify-content: center;
+   274|      flex-shrink: 0;
+   275|    }
+   276|    .logo-mark img {
+   277|      width: 100%; height: 100%;
+   278|      object-fit: contain;
+   279|      display: block;
+   280|    }
+   281|    .logo-info { display: flex; flex-direction: column; line-height: 1.1; }
+   282|    .logo-info strong {
+   283|      font-family: var(--f-disp);
+   284|      font-weight: 900;
+   285|      font-size: 1.15rem;
+   286|      letter-spacing: 0.1em;
+   287|      text-transform: uppercase;
+   288|    }
+   289|    .logo-info small {
+   290|      font-size: 0.7rem;
+   291|      letter-spacing: 0.22em;
+   292|      text-transform: uppercase;
+   293|      color: var(--c-mid);
+   294|    }
+   295|
+   296|    .nav-right {
+   297|      display: flex;
+   298|      align-items: center;
+   299|      justify-content: flex-end;
+   300|      gap: 12px;
+   301|    }
+   302|    .nav-ig {
+   303|      display: flex; align-items: center; gap: 6px;
+   304|      font-size: 0.78rem; letter-spacing: 0.06em;
+   305|      color: var(--c-mid);
+   306|      transition: color 0.2s;
+   307|    }
+   308|    .nav-ig:hover { color: var(--c-light); }
+   309|
+   310|    /* ══════════════════════════════════════
+   311|       HERO
+   312|    ══════════════════════════════════════ */
+   313|    .hero {
+   314|      position: relative;
+   315|      min-height: 100svh;
+   316|      display: flex;
+   317|      align-items: flex-end;
+   318|      overflow: hidden;
+   319|    }
+   320|
+   321|    /* Grid lines background */
+   322|    .hero-grid {
+   323|      position: absolute;
+   324|      inset: 0;
+   325|      background-image:
+   326|        linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
+   327|        linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+   328|      background-size: 80px 80px;
+   329|      z-index: 0;
+   330|      mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 30%, transparent 100%);
+   331|    }
+   332|
+   333|    /* Red glow */
+   334|    .hero-glow {
+   335|      position: absolute;
+   336|      top: 15%; right: -5%;
+   337|      width: 700px; height: 700px;
+   338|      background: radial-gradient(circle, rgba(192,24,32,0.15) 0%, transparent 65%);
+   339|      z-index: 0;
+   340|      pointer-events: none;
+   341|    }
+   342|
+   343|    /* OC watermark */
+   344|    .hero-wm {
+   345|      position: absolute;
+   346|      top: 42%;
+   347|      left: 72%;
+   348|      transform: translate(-50%, -50%);
+   349|      width: clamp(480px, 72vw, 900px);
+   350|      height: clamp(480px, 72vw, 900px);
+   351|      opacity: 0.04;
+   352|      pointer-events: none;
+   353|      user-select: none;
+   354|      z-index: 0;
+   355|    }
+   356|    .hero-wm img {
+   357|      width: 100%;
+   358|      height: 100%;
+   359|      object-fit: contain;
+   360|      display: block;
+   361|    }
+   362|
+   363|    /* Diagonal accent */
+   364|    .hero-line {
+   365|      position: absolute;
+   366|      top: 0; right: 22%;
+   367|      width: 1px;
+   368|      height: 100%;
+   369|      background: linear-gradient(to bottom, transparent, rgba(192,24,32,0.3) 40%, transparent);
+   370|      z-index: 0;
+   371|    }
+   372|
+   373|    .hero .container {
+   374|      position: relative;
+   375|      z-index: 1;
+   376|      padding-bottom: 80px;
+   377|      padding-top: 120px;
+   378|      display: grid;
+   379|      grid-template-columns: 1fr 1fr;
+   380|      gap: 0 64px;
+   381|      align-items: end;
+   382|    }
+   383|
+   384|    .hero-left {}
+   385|
+   386|    .hero-tag {
+   387|      display: inline-flex;
+   388|      align-items: center;
+   389|      gap: 10px;
+   390|      font-size: 0.7rem;
+   391|      font-weight: 600;
+   392|      letter-spacing: 0.28em;
+   393|      text-transform: uppercase;
+   394|      color: var(--c-red);
+   395|      margin-bottom: 28px;
+   396|      overflow: hidden;
+   397|    }
+   398|    .hero-tag::before {
+   399|      content: '';
+   400|      display: block;
+   401|      width: 28px; height: 1.5px;
+   402|      background: var(--c-red);
+   403|      transform: scaleX(0);
+   404|      transform-origin: left;
+   405|    }
+   406|
+   407|    /* Text reveal wrapper */
+   408|    .reveal-line {
+   409|      overflow: hidden;
+   410|      display: block;
+   411|    }
+   412|
+   413|    .hero h1 {
+   414|      font-family: var(--f-disp);
+   415|      font-weight: 900;
+   416|      font-size: clamp(60px, 9vw, 120px);
+   417|      line-height: 0.88;
+   418|      letter-spacing: -0.01em;
+   419|      text-transform: uppercase;
+   420|      color: var(--c-light);
+   421|      margin-bottom: 36px;
+   422|    }
+   423|    .hero h1 em {
+   424|      font-style: normal;
+   425|      color: var(--c-red);
+   426|    }
+   427|
+   428|    .hero-sub {
+   429|      font-size: 1rem;
+   430|      color: var(--c-mid);
+   431|      line-height: 1.75;
+   432|      margin-bottom: 40px;
+   433|      max-width: 380px;
+   434|    }
+   435|
+   436|    .hero-ctas {
+   437|      display: flex;
+   438|      flex-wrap: wrap;
+   439|      gap: 12px;
+   440|    }
+   441|
+   442|    /* Right col: stats */
+   443|    .hero-right {
+   444|      display: flex;
+   445|      flex-direction: column;
+   446|      justify-content: flex-end;
+   447|      gap: 1px;
+   448|      padding-left: 40px;
+   449|      border-left: 1px solid rgba(255,255,255,0.07);
+   450|    }
+   451|
+   452|    .stat-block {
+   453|      padding: 28px 0;
+   454|      border-bottom: 1px solid rgba(255,255,255,0.06);
+   455|    }
+   456|    .stat-block:first-child { border-top: 1px solid rgba(255,255,255,0.06); }
+   457|
+   458|    .stat-num {
+   459|      font-family: var(--f-disp);
+   460|      font-weight: 900;
+   461|      font-size: clamp(3rem, 5vw, 4.5rem);
+   462|      line-height: 1;
+   463|      color: var(--c-light);
+   464|      display: flex;
+   465|      align-items: baseline;
+   466|      gap: 2px;
+   467|    }
+   468|    .stat-num sup {
+   469|      font-size: 0.45em;
+   470|      color: var(--c-red);
+   471|      font-weight: 900;
+   472|    }
+   473|    .stat-label {
+   474|      font-size: 0.72rem;
+   475|      letter-spacing: 0.16em;
+   476|      text-transform: uppercase;
+   477|      color: var(--c-mid);
+   478|      margin-top: 6px;
+   479|    }
+   480|
+   481|    /* ══════════════════════════════════════
+   482|       TICKER / PILARES
+   483|    ══════════════════════════════════════ */
+   484|    .ticker-wrap {
+   485|      background: var(--c-red);
+   486|      padding: 16px 0;
+   487|      overflow: hidden;
+   488|      position: relative;
+   489|    }
+   490|    .ticker-track {
+   491|      display: flex;
+   492|      white-space: nowrap;
+   493|      will-change: transform;
+   494|    }
+   495|    .ticker-item {
+   496|      display: inline-flex;
+   497|      align-items: center;
+   498|      gap: 20px;
+   499|      padding: 0 32px;
+   500|      font-family: var(--f-disp);
+   501|      font-weight: 700;
+   502|      font-size: 0.82rem;
+   503|      letter-spacing: 0.22em;
+   504|      text-transform: uppercase;
+   505|      color: #fff;
+   506|      flex-shrink: 0;
+   507|    }
+   508|    .ticker-sep {
+   509|      width: 4px; height: 4px;
+   510|      background: rgba(255,255,255,0.5);
+   511|      border-radius: 50%;
+   512|      flex-shrink: 0;
+   513|    }
+   514|
+   515|    /* ══════════════════════════════════════
+   516|       SERVICIOS
+   517|    ══════════════════════════════════════ */
+   518|    .servicios {
+   519|      padding: 120px 0;
+   520|    }
+   521|
+   522|    .section-head {
+   523|      display: grid;
+   524|      grid-template-columns: 1fr 1fr;
+   525|      gap: 40px 80px;
+   526|      align-items: end;
+   527|      margin-bottom: 72px;
+   528|    }
+   529|
+   530|    .s-tag {
+   531|      display: inline-flex;
+   532|      align-items: center;
+   533|      gap: 10px;
+   534|      font-size: 0.68rem;
+   535|      font-weight: 600;
+   536|      letter-spacing: 0.28em;
+   537|      text-transform: uppercase;
+   538|      color: var(--c-red);
+   539|      margin-bottom: 14px;
+   540|    }
+   541|    .s-tag::before {
+   542|      content: '';
+   543|      display: block;
+   544|      width: 24px; height: 1.5px;
+   545|      background: var(--c-red);
+   546|    }
+   547|
+   548|    .s-title {
+   549|      font-family: var(--f-disp);
+   550|      font-weight: 900;
+   551|      font-size: clamp(40px, 5.5vw, 68px);
+   552|      line-height: 0.9;
+   553|      text-transform: uppercase;
+   554|    }
+   555|    .s-title em { font-style: normal; color: var(--c-red); }
+   556|
+   557|    .s-desc {
+   558|      font-size: 0.95rem;
+   559|      color: var(--c-mid);
+   560|      line-height: 1.75;
+   561|      align-self: end;
+   562|    }
+   563|
+   564|    /* Cards */
+   565|    .cards-grid {
+   566|      display: grid;
+   567|      grid-template-columns: repeat(3, 1fr);
+   568|      gap: 2px;
+   569|    }
+   570|
+   571|    .card {
+   572|      background: var(--c-dark-2);
+   573|      padding: 48px 40px;
+   574|      position: relative;
+   575|      overflow: hidden;
+   576|      transition: background 0.3s;
+   577|    }
+   578|    .card::before {
+   579|      content: '';
+   580|      position: absolute;
+   581|      bottom: 0; left: 0;
+   582|      width: 100%; height: 2px;
+   583|      background: var(--c-red);
+   584|      transform: scaleX(0);
+   585|      transform-origin: left;
+   586|      transition: transform 0.4s var(--ease-out-expo);
+   587|    }
+   588|    .card::after {
+   589|      content: '';
+   590|      position: absolute;
+   591|      top: 0; right: 0;
+   592|      width: 140px; height: 140px;
+   593|      background: radial-gradient(circle, var(--c-red-glow), transparent 70%);
+   594|      opacity: 0;
+   595|      transition: opacity 0.4s;
+   596|      pointer-events: none;
+   597|    }
+   598|    .card:hover { background: var(--c-dark-3); }
+   599|    .card:hover::before { transform: scaleX(1); }
+   600|    .card:hover::after { opacity: 1; }
+   601|
+   602|    .card-num {
+   603|      font-family: var(--f-disp);
+   604|      font-weight: 900;
+   605|      font-size: 5rem;
+   606|      line-height: 1;
+   607|      color: rgba(192,24,32,0.1);
+   608|      position: absolute;
+   609|      top: 24px; right: 28px;
+   610|      transition: color 0.3s;
+   611|    }
+   612|    .card:hover .card-num { color: rgba(192,24,32,0.2); }
+   613|
+   614|    .card-icon {
+   615|      width: 48px; height: 48px;
+   616|      border: 1px solid rgba(192,24,32,0.3);
+   617|      border-radius: 2px;
+   618|      display: flex; align-items: center; justify-content: center;
+   619|      color: var(--c-red);
+   620|      margin-bottom: 28px;
+   621|      transition: background 0.3s, border-color 0.3s;
+   622|    }
+   623|    .card:hover .card-icon {
+   624|      background: rgba(192,24,32,0.1);
+   625|      border-color: var(--c-red);
+   626|    }
+   627|
+   628|    .card-title {
+   629|      font-family: var(--f-disp);
+   630|      font-weight: 900;
+   631|      font-size: 1.65rem;
+   632|      text-transform: uppercase;
+   633|      letter-spacing: 0.02em;
+   634|      margin-bottom: 14px;
+   635|    }
+   636|    .card-desc {
+   637|      font-size: 0.88rem;
+   638|      color: var(--c-mid);
+   639|      line-height: 1.75;
+   640|      margin-bottom: 28px;
+   641|    }
+   642|    .card-list { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+   643|    .card-list li {
+   644|      display: flex; align-items: center; gap: 10px;
+   645|      font-size: 0.8rem;
+   646|      color: var(--c-mid);
+   647|    }
+   648|    .card-list li::before {
+   649|      content: '';
+   650|      display: block;
+   651|      width: 4px; height: 4px;
+   652|      background: var(--c-red);
+   653|      border-radius: 50%;
+   654|      flex-shrink: 0;
+   655|    }
+   656|
+   657|    /* ══════════════════════════════════════
+   658|       PROCESO (minimal horizontal)
+   659|    ══════════════════════════════════════ */
+   660|    .proceso {
+   661|      padding: 80px 0 120px;
+   662|      border-top: 1px solid rgba(255,255,255,0.05);
+   663|    }
+   664|    .proceso-steps {
+   665|      display: grid;
+   666|      grid-template-columns: repeat(4, 1fr);
+   667|      gap: 2px;
+   668|      margin-top: 60px;
+   669|    }
+   670|    .step {
+   671|      padding: 36px 32px;
+   672|      background: var(--c-dark);
+   673|      position: relative;
+   674|    }
+   675|    .step::after {
+   676|      content: attr(data-n);
+   677|      position: absolute;
+   678|      top: 20px; right: 20px;
+   679|      font-family: var(--f-disp);
+   680|      font-weight: 900;
+   681|      font-size: 3.5rem;
+   682|      color: rgba(255,255,255,0.04);
+   683|      line-height: 1;
+   684|    }
+   685|    .step-label {
+   686|      font-size: 0.65rem;
+   687|      letter-spacing: 0.2em;
+   688|      text-transform: uppercase;
+   689|      color: var(--c-red);
+   690|      margin-bottom: 14px;
+   691|    }
+   692|    .step-title {
+   693|      font-family: var(--f-disp);
+   694|      font-weight: 900;
+   695|      font-size: 1.2rem;
+   696|      text-transform: uppercase;
+   697|      letter-spacing: 0.03em;
+   698|      margin-bottom: 10px;
+   699|    }
+   700|    .step-desc {
+   701|      font-size: 0.83rem;
+   702|      color: var(--c-mid);
+   703|      line-height: 1.6;
+   704|    }
+   705|
+   706|    /* ══════════════════════════════════════
+   707|       CTA FINAL
+   708|    ══════════════════════════════════════ */
+   709|    .cta-section {
+   710|      padding: 140px 0;
+   711|      text-align: center;
+   712|      position: relative;
+   713|      overflow: hidden;
+   714|    }
+   715|    .cta-section::before {
+   716|      content: '';
+   717|      position: absolute;
+   718|      inset: 0;
+   719|      background: radial-gradient(ellipse 80% 100% at 50% 50%, rgba(192,24,32,0.08) 0%, transparent 70%);
+   720|      pointer-events: none;
+   721|    }
+   722|    .cta-section .container { position: relative; z-index: 1; }
+   723|
+   724|    .cta-big {
+   725|      font-family: var(--f-disp);
+   726|      font-weight: 900;
+   727|      font-size: clamp(52px, 9vw, 130px);
+   728|      line-height: 0.88;
+   729|      text-transform: uppercase;
+   730|      color: var(--c-light);
+   731|      margin-bottom: 16px;
+   732|    }
+   733|    .cta-big em { font-style: normal; color: var(--c-red); }
+   734|
+   735|    .cta-sub {
+   736|      font-size: 1rem;
+   737|      color: var(--c-mid);
+   738|      margin-bottom: 48px;
+   739|      line-height: 1.7;
+   740|    }
+   741|    .cta-btns {
+   742|      display: flex;
+   743|      flex-wrap: wrap;
+   744|      justify-content: center;
+   745|      gap: 14px;
+   746|    }
+   747|
+   748|    /* ══════════════════════════════════════
+   749|       FOOTER
+   750|    ══════════════════════════════════════ */
+   751|    footer {
+   752|      background: var(--c-dark);
+   753|      border-top: 1px solid rgba(255,255,255,0.05);
+   754|      padding: 60px 0 32px;
+   755|    }
+   756|    .footer-top {
+   757|      display: grid;
+   758|      grid-template-columns: 1.4fr 1fr 1fr;
+   759|      gap: 60px;
+   760|      padding-bottom: 48px;
+   761|      border-bottom: 1px solid rgba(255,255,255,0.05);
+   762|      margin-bottom: 32px;
+   763|    }
+   764|    .footer-brand p {
+   765|      font-size: 0.82rem;
+   766|      color: var(--c-mid);
+   767|      line-height: 1.7;
+   768|      margin-top: 16px;
+   769|      max-width: 280px;
+   770|    }
+   771|    .footer-col h5 {
+   772|      font-size: 0.65rem;
+   773|      font-weight: 600;
+   774|      letter-spacing: 0.22em;
+   775|      text-transform: uppercase;
+   776|      color: var(--c-red);
+   777|      margin-bottom: 20px;
+   778|    }
+   779|    .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+   780|    .footer-col li a, .footer-col li span {
+   781|      font-size: 0.85rem;
+   782|      color: var(--c-mid);
+   783|      transition: color 0.2s;
+   784|    }
+   785|    .footer-col li a:hover { color: var(--c-light); }
+   786|
+   787|    .footer-bottom {
+   788|      display: flex;
+   789|      flex-wrap: wrap;
+   790|      align-items: center;
+   791|      justify-content: space-between;
+   792|      gap: 12px;
+   793|    }
+   794|    .footer-bottom p {
+   795|      font-size: 0.75rem;
+   796|      color: rgba(122,122,122,0.6);
+   797|    }
+   798|    .footer-bottom a { color: var(--c-red); }
+   799|
+   800|    /* ══════════════════════════════════════
+   801|       FLOATING WA
+   802|    ══════════════════════════════════════ */
+   803|    .wa-fab {
+   804|      position: fixed;
+   805|      bottom: 28px; right: 28px;
+   806|      z-index: 400;
+   807|      width: 56px; height: 56px;
+   808|      background: #25D366;
+   809|      border-radius: 50%;
+   810|      display: flex; align-items: center; justify-content: center;
+   811|      box-shadow: 0 4px 24px rgba(37,211,102,0.4);
+   812|      opacity: 0; /* animated in */
+   813|      transform: scale(0.8);
+   814|    }
+   815|    .wa-fab svg { width: 28px; height: 28px; fill: #fff; }
+   816|
+   817|    /* ══════════════════════════════════════
+   818|       PROGRESS LINE
+   819|    ══════════════════════════════════════ */
+   820|    #progress {
+   821|      position: fixed;
+   822|      top: 0; left: 0;
+   823|      height: 2px;
+   824|      background: var(--c-red);
+   825|      z-index: 600;
+   826|      transform-origin: left;
+   827|      transform: scaleX(0);
+   828|    }
+   829|
+   830|    /* ══════════════════════════════════════
+   831|       RESPONSIVE
+   832|    ══════════════════════════════════════ */
+   833|    /* OFF-CANVAS MENU */
+   834|    .nav-toggle {
+   835|      display: flex;
+   836|      flex-direction: column;
+   837|      gap: 5px;
+   838|      background: none;
+   839|      border: none;
+   840|      padding: 8px;
+   841|      cursor: pointer;
+   842|      z-index: 1001;
+   843|    }
+   844|    .nav-toggle span {
+   845|      display: block;
+   846|      width: 24px;
+   847|      height: 2px;
+   848|      background: var(--c-light);
+   849|      transition: 0.3s;
+   850|    }
+   851|    .nav-toggle.active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+   852|    .nav-toggle.active span:nth-child(2) { opacity: 0; }
+   853|    .nav-toggle.active span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+   854|
+   855|    /* Overlay */
+   856|    .offcanvas-overlay {
+   857|      position: fixed;
+   858|      inset: 0;
+   859|      background: rgba(12,12,12,0.6);
+   860|      backdrop-filter: blur(4px);
+   861|      z-index: 998;
+   862|      opacity: 0;
+   863|      visibility: hidden;
+   864|      transition: opacity 0.4s ease, visibility 0.4s ease;
+   865|    }
+   866|    .offcanvas-overlay.active { opacity: 1; visibility: visible; }
+   867|
+   868|    /* Off-canvas panel */
+   869|    .offcanvas-menu {
+   870|      position: fixed;
+   871|      top: 0; right: 0; bottom: 0;
+   872|      width: 33vw;
+   873|      min-width: 320px;
+   874|      max-width: 480px;
+   875|      background: var(--c-dark);
+   876|      border-left: 1px solid rgba(255,255,255,0.06);
+   877|      z-index: 999;
+   878|      display: flex;
+   879|      flex-direction: column;
+   880|      padding: 100px 40px 40px;
+   881|      gap: 6px;
+   882|      transform: translateX(100%);
+   883|      transition: transform 0.5s var(--ease-out-expo);
+   884|    }
+   885|    .offcanvas-menu.active { transform: translateX(0); }
+   886|
+   887|    .offcanvas-close {
+   888|      position: absolute;
+   889|      top: 28px;
+   890|      right: 32px;
+   891|      width: 44px;
+   892|      height: 44px;
+   893|      display: flex;
+   894|      align-items: center;
+   895|      justify-content: center;
+   896|      background: var(--c-red);
+   897|      border: none;
+   898|      border-radius: 2px;
+   899|      cursor: pointer;
+   900|      z-index: 1000;
+   901|      transition: background 0.2s, transform 0.2s;
+   902|    }
+   903|    .offcanvas-close:hover { background: var(--c-red-dk); transform: scale(1.05); }
+   904|    .offcanvas-close svg {
+   905|      width: 18px;
+   906|      height: 18px;
+   907|      stroke: #fff;
+   908|      stroke-width: 2.5;
+   909|      stroke-linecap: round;
+   910|    }
+   911|
+   912|    .offcanvas-menu a {
+   913|      font-family: var(--f-disp);
+   914|      font-size: 1.6rem;
+   915|      font-weight: 700;
+   916|      letter-spacing: 0.06em;
+   917|      text-transform: uppercase;
+   918|      color: var(--c-light);
+   919|      padding: 14px 0;
+   920|      border-bottom: 1px solid rgba(255,255,255,0.06);
+   921|      transition: color 0.2s, padding-left 0.2s;
+   922|    }
+   923|    .offcanvas-menu a:hover { color: var(--c-red); padding-left: 8px; }
+   924|    .offcanvas-menu .btn-red {
+   925|      font-size: 1.1rem;
+   926|      padding: 18px 40px;
+   927|      margin-top: 24px;
+   928|      text-align: center;
+   929|      justify-content: center;
+   930|    }
+   931|    .offcanvas-footer {
+   932|      margin-top: auto;
+   933|      padding-top: 32px;
+   934|      border-top: 1px solid rgba(255,255,255,0.06);
+   935|      font-size: 0.75rem;
+   936|      color: var(--c-mid);
+   937|      letter-spacing: 0.1em;
+   938|    }
+   939|
+   940|    @media (max-width: 768px) {
+   941|      .nav-right-desktop { display: none !important; }
+   942|      .navbar .container { grid-template-columns: auto 1fr auto; }
+   943|      .logo-mark { width: 58px; height: 58px; }
+   944|      .logo-info strong { font-size: 1.1rem; letter-spacing: 0.08em; }
+   945|      .logo-info small { font-size: 0.58rem; letter-spacing: 0.16em; }
+   946|      .offcanvas-menu { width: 100%; max-width: 100%; padding: 90px 28px 28px; }
+   947|      .offcanvas-menu a { font-size: 1.35rem; padding: 12px 0; }
+   948|    }
+   949|
+   950|    @media (max-width: 900px) {
+   951|      .hero .container {
+   952|        grid-template-columns: 1fr;
+   953|      }
+   954|      .hero-right {
+   955|        padding-left: 0;
+   956|        border-left: none;
+   957|        border-top: 1px solid rgba(255,255,255,0.07);
+   958|        padding-top: 40px;
+   959|        flex-direction: row;
+   960|        flex-wrap: wrap;
+   961|        gap: 0;
+   962|      }
+   963|      .stat-block {
+   964|        flex: 1;
+   965|        min-width: 140px;
+   966|        padding: 20px 24px;
+   967|        border-bottom: none;
+   968|        border-right: 1px solid rgba(255,255,255,0.06);
+   969|      }
+   970|      .stat-block:last-child { border-right: none; }
+   971|      .section-head { grid-template-columns: 1fr; }
+   972|      .cards-grid { grid-template-columns: 1fr; }
+   973|      .proceso-steps { grid-template-columns: 1fr 1fr; }
+   974|      .footer-top { grid-template-columns: 1fr; gap: 32px; }
+   975|      .proceso-step .step-num { font-size: 64px; }
+   976|    }
+   977|
+   978|    @media (max-width: 768px) {
+   979|      .hero { min-height: auto; padding: 140px 0 60px; }
+   980|      .hero .container { gap: 40px; }
+   981|      .hero h1 { font-size: clamp(42px, 13vw, 72px); line-height: 0.92; }
+   982|      .hero-sub { font-size: 1rem; }
+   983|      .hero-ctas { flex-direction: column; gap: 12px; }
+   984|      .hero-ctas .btn { width: 100%; justify-content: center; }
+   985|      .section-title { font-size: clamp(36px, 10vw, 64px); }
+   986|      .cards-grid { gap: 20px; }
+   987|      .card { padding: 32px 24px; }
+   988|      .proceso-steps { grid-template-columns: 1fr; gap: 32px; }
+   989|      .proceso-step { padding: 32px 24px; }
+   990|      .cta-big { font-size: clamp(36px, 11vw, 64px); }
+   991|      .cta-final .btn { width: 100%; justify-content: center; }
+   992|      .footer-top { gap: 40px; }
+   993|      .footer-brand { max-width: 100%; }
+   994|      .footer-brand .logo { justify-content: center; }
+   995|      .footer-brand p { text-align: center; }
+   996|      .footer-col { text-align: center; }
+   997|      .footer-col ul { align-items: center; }
+   998|      .footer-col a { justify-content: center; }
+   999|      .wa-fab { width: 52px; height: 52px; bottom: 20px; right: 20px; }
+  1000|      .wa-fab svg { width: 22px; height: 22px; }
+  1001|    }
+  1002|
+  1003|    @media (max-width: 600px) {
+  1004|      .container { padding: 0 20px; }
+  1005|      .hero h1 { font-size: clamp(38px, 12vw, 64px); }
+  1006|      .nav-right .btn { display: none; }
+  1007|      .proceso-steps { grid-template-columns: 1fr; }
+  1008|      .cta-big { font-size: clamp(32px, 11vw, 56px); }
+  1009|      .section-title { font-size: clamp(32px, 10vw, 56px); }
+  1010|      .stat-block { min-width: 120px; padding: 16px 12px; }
+  1011|      .stat-num { font-size: 2rem; }
+  1012|      .card { padding: 28px 20px; }
+  1013|      .card h3 { font-size: 1.4rem; }
+  1014|      .ticker { font-size: 0.75rem; padding: 14px 0; }
+  1015|      .logo-mark { width: 64px; height: 64px; }
+  1016|      .logo-info strong { font-size: 1.2rem; }
+  1017|      .logo-info small { font-size: 0.62rem; }
+  1018|    }
+  1019|
+  1020|    @media (max-width: 400px) {
+  1021|      .hero h1 { font-size: clamp(34px, 11vw, 52px); }
+  1022|      .section-title { font-size: clamp(28px, 9vw, 48px); }
+  1023|      .stat-num { font-size: 1.6rem; }
+  1024|      .stat-label { font-size: 0.65rem; }
+  1025|      .card { padding: 24px 16px; }
+  1026|      .btn { padding: 14px 24px; font-size: 0.8rem; }
+  1027|    }
+  1028|
+    /* ════════════════════════════════════
+       CONTACTO
+    ════════════════════════════════════ */
+    .contacto {
+      padding: 100px 0 80px;
       border-top: 1px solid rgba(255,255,255,0.05);
     }
-    .proceso-steps {
+    .contacto-grid {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 2px;
-      margin-top: 60px;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 48px;
+      margin-top: 56px;
+      align-items: start;
     }
-    .step {
-      padding: 36px 32px;
-      background: var(--c-dark);
-      position: relative;
-    }
-    .step::after {
-      content: attr(data-n);
-      position: absolute;
-      top: 20px; right: 20px;
-      font-family: var(--f-disp);
-      font-weight: 900;
-      font-size: 3.5rem;
-      color: rgba(255,255,255,0.04);
-      line-height: 1;
-    }
-    .step-label {
-      font-size: 0.65rem;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: var(--c-red);
-      margin-bottom: 14px;
-    }
-    .step-title {
-      font-family: var(--f-disp);
-      font-weight: 900;
-      font-size: 1.2rem;
-      text-transform: uppercase;
-      letter-spacing: 0.03em;
-      margin-bottom: 10px;
-    }
-    .step-desc {
-      font-size: 0.83rem;
-      color: var(--c-mid);
-      line-height: 1.6;
-    }
-
-    /* ══════════════════════════════════════
-       CTA FINAL
-    ══════════════════════════════════════ */
-    .cta-section {
-      padding: 140px 0;
-      text-align: center;
-      position: relative;
+    .contacto-map {
+      width: 100%;
+      height: 420px;
+      border-radius: 8px;
       overflow: hidden;
+      border: 1px solid rgba(255,255,255,0.06);
     }
-    .cta-section::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: radial-gradient(ellipse 80% 100% at 50% 50%, rgba(192,24,32,0.08) 0%, transparent 70%);
-      pointer-events: none;
+    .contacto-map iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      filter: grayscale(0.6) contrast(1.1);
     }
-    .cta-section .container { position: relative; z-index: 1; }
-
-    .cta-big {
-      font-family: var(--f-disp);
-      font-weight: 900;
-      font-size: clamp(52px, 9vw, 130px);
-      line-height: 0.88;
-      text-transform: uppercase;
-      color: var(--c-light);
-      margin-bottom: 16px;
-    }
-    .cta-big em { font-style: normal; color: var(--c-red); }
-
-    .cta-sub {
-      font-size: 1rem;
-      color: var(--c-mid);
-      margin-bottom: 48px;
-      line-height: 1.7;
-    }
-    .cta-btns {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 14px;
-    }
-
-    /* ══════════════════════════════════════
-       FOOTER
-    ══════════════════════════════════════ */
-    footer {
-      background: var(--c-dark);
-      border-top: 1px solid rgba(255,255,255,0.05);
-      padding: 60px 0 32px;
-    }
-    .footer-top {
-      display: grid;
-      grid-template-columns: 1.4fr 1fr 1fr;
-      gap: 60px;
-      padding-bottom: 48px;
-      border-bottom: 1px solid rgba(255,255,255,0.05);
+    .contacto-info {
       margin-bottom: 32px;
     }
-    .footer-brand p {
-      font-size: 0.82rem;
-      color: var(--c-mid);
-      line-height: 1.7;
-      margin-top: 16px;
-      max-width: 280px;
-    }
-    .footer-col h5 {
-      font-size: 0.65rem;
-      font-weight: 600;
-      letter-spacing: 0.22em;
-      text-transform: uppercase;
-      color: var(--c-red);
+    .contacto-info-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
       margin-bottom: 20px;
-    }
-    .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
-    .footer-col li a, .footer-col li span {
-      font-size: 0.85rem;
       color: var(--c-mid);
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+    .contacto-info-item svg {
+      flex-shrink: 0;
+      margin-top: 2px;
+      color: var(--c-red);
+    }
+    .contacto-info-item strong {
+      color: var(--c-light);
+      display: block;
+      font-weight: 600;
+      margin-bottom: 2px;
+      font-size: 0.82rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+    .contacto-info-item a {
+      color: var(--c-mid);
+      text-decoration: none;
       transition: color 0.2s;
     }
-    .footer-col li a:hover { color: var(--c-light); }
+    .contacto-info-item a:hover { color: var(--c-red); }
 
-    .footer-bottom {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
-      gap: 12px;
-    }
-    .footer-bottom p {
-      font-size: 0.75rem;
-      color: rgba(122,122,122,0.6);
-    }
-    .footer-bottom a { color: var(--c-red); }
-
-    /* ══════════════════════════════════════
-       FLOATING WA
-    ══════════════════════════════════════ */
-    .wa-fab {
-      position: fixed;
-      bottom: 28px; right: 28px;
-      z-index: 400;
-      width: 56px; height: 56px;
-      background: #25D366;
-      border-radius: 50%;
-      display: flex; align-items: center; justify-content: center;
-      box-shadow: 0 4px 24px rgba(37,211,102,0.4);
-      opacity: 0; /* animated in */
-      transform: scale(0.8);
-    }
-    .wa-fab svg { width: 28px; height: 28px; fill: #fff; }
-
-    /* ══════════════════════════════════════
-       PROGRESS LINE
-    ══════════════════════════════════════ */
-    #progress {
-      position: fixed;
-      top: 0; left: 0;
-      height: 2px;
-      background: var(--c-red);
-      z-index: 600;
-      transform-origin: left;
-      transform: scaleX(0);
-    }
-
-    /* ══════════════════════════════════════
-       RESPONSIVE
-    ══════════════════════════════════════ */
-    /* OFF-CANVAS MENU */
-    .nav-toggle {
+    .contacto-form {
       display: flex;
       flex-direction: column;
-      gap: 5px;
-      background: none;
-      border: none;
-      padding: 8px;
-      cursor: pointer;
-      z-index: 1001;
+      gap: 16px;
     }
-    .nav-toggle span {
-      display: block;
-      width: 24px;
-      height: 2px;
-      background: var(--c-light);
-      transition: 0.3s;
-    }
-    .nav-toggle.active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
-    .nav-toggle.active span:nth-child(2) { opacity: 0; }
-    .nav-toggle.active span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
-
-    /* Overlay */
-    .offcanvas-overlay {
-      position: fixed;
-      inset: 0;
-      background: rgba(12,12,12,0.6);
-      backdrop-filter: blur(4px);
-      z-index: 998;
-      opacity: 0;
-      visibility: hidden;
-      transition: opacity 0.4s ease, visibility 0.4s ease;
-    }
-    .offcanvas-overlay.active { opacity: 1; visibility: visible; }
-
-    /* Off-canvas panel */
-    .offcanvas-menu {
-      position: fixed;
-      top: 0; right: 0; bottom: 0;
-      width: 33vw;
-      min-width: 320px;
-      max-width: 480px;
-      background: var(--c-dark);
-      border-left: 1px solid rgba(255,255,255,0.06);
-      z-index: 999;
-      display: flex;
-      flex-direction: column;
-      padding: 100px 40px 40px;
-      gap: 6px;
-      transform: translateX(100%);
-      transition: transform 0.5s var(--ease-out-expo);
-    }
-    .offcanvas-menu.active { transform: translateX(0); }
-
-    .offcanvas-close {
-      position: absolute;
-      top: 28px;
-      right: 32px;
-      width: 44px;
-      height: 44px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: var(--c-red);
-      border: none;
-      border-radius: 2px;
-      cursor: pointer;
-      z-index: 1000;
-      transition: background 0.2s, transform 0.2s;
-    }
-    .offcanvas-close:hover { background: var(--c-red-dk); transform: scale(1.05); }
-    .offcanvas-close svg {
-      width: 18px;
-      height: 18px;
-      stroke: #fff;
-      stroke-width: 2.5;
-      stroke-linecap: round;
-    }
-
-    .offcanvas-menu a {
-      font-family: var(--f-disp);
-      font-size: 1.6rem;
-      font-weight: 700;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      color: var(--c-light);
-      padding: 14px 0;
-      border-bottom: 1px solid rgba(255,255,255,0.06);
-      transition: color 0.2s, padding-left 0.2s;
-    }
-    .offcanvas-menu a:hover { color: var(--c-red); padding-left: 8px; }
-    .offcanvas-menu .btn-red {
-      font-size: 1.1rem;
-      padding: 18px 40px;
-      margin-top: 24px;
-      text-align: center;
-      justify-content: center;
-    }
-    .offcanvas-footer {
-      margin-top: auto;
-      padding-top: 32px;
-      border-top: 1px solid rgba(255,255,255,0.06);
-      font-size: 0.75rem;
-      color: var(--c-mid);
+    .contacto-form label {
+      font-size: 0.72rem;
       letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--c-mid);
+      margin-bottom: -10px;
+    }
+    .contacto-form input,
+    .contacto-form textarea {
+      background: var(--c-dark);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 6px;
+      padding: 14px 16px;
+      color: var(--c-light);
+      font-family: var(--f-body);
+      font-size: 0.9rem;
+      outline: none;
+      transition: border-color 0.2s, box-shadow 0.2s;
+      resize: vertical;
+    }
+    .contacto-form input:focus,
+    .contacto-form textarea:focus {
+      border-color: var(--c-red);
+      box-shadow: 0 0 0 3px rgba(192,24,32,0.12);
+    }
+    .contacto-form input::placeholder,
+    .contacto-form textarea::placeholder {
+      color: rgba(122,122,122,0.5);
+    }
+    .contacto-form textarea { min-height: 120px; }
+    .contacto-form .btn {
+      align-self: flex-start;
+      margin-top: 8px;
     }
 
     @media (max-width: 768px) {
-      .nav-right-desktop { display: none !important; }
-      .navbar .container { grid-template-columns: auto 1fr auto; }
-      .logo-mark { width: 58px; height: 58px; }
-      .logo-info strong { font-size: 1.1rem; letter-spacing: 0.08em; }
-      .logo-info small { font-size: 0.58rem; letter-spacing: 0.16em; }
-      .offcanvas-menu { width: 100%; max-width: 100%; padding: 90px 28px 28px; }
-      .offcanvas-menu a { font-size: 1.35rem; padding: 12px 0; }
-    }
-
-    @media (max-width: 900px) {
-      .hero .container {
+      .contacto-grid {
         grid-template-columns: 1fr;
+        gap: 40px;
       }
-      .hero-right {
-        padding-left: 0;
-        border-left: none;
-        border-top: 1px solid rgba(255,255,255,0.07);
-        padding-top: 40px;
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 0;
-      }
-      .stat-block {
-        flex: 1;
-        min-width: 140px;
-        padding: 20px 24px;
-        border-bottom: none;
-        border-right: 1px solid rgba(255,255,255,0.06);
-      }
-      .stat-block:last-child { border-right: none; }
-      .section-head { grid-template-columns: 1fr; }
-      .cards-grid { grid-template-columns: 1fr; }
-      .proceso-steps { grid-template-columns: 1fr 1fr; }
-      .footer-top { grid-template-columns: 1fr; gap: 32px; }
-      .proceso-step .step-num { font-size: 64px; }
-    }
-
-    @media (max-width: 768px) {
-      .hero { min-height: auto; padding: 140px 0 60px; }
-      .hero .container { gap: 40px; }
-      .hero h1 { font-size: clamp(42px, 13vw, 72px); line-height: 0.92; }
-      .hero-sub { font-size: 1rem; }
-      .hero-ctas { flex-direction: column; gap: 12px; }
-      .hero-ctas .btn { width: 100%; justify-content: center; }
-      .section-title { font-size: clamp(36px, 10vw, 64px); }
-      .cards-grid { gap: 20px; }
-      .card { padding: 32px 24px; }
-      .proceso-steps { grid-template-columns: 1fr; gap: 32px; }
-      .proceso-step { padding: 32px 24px; }
-      .cta-big { font-size: clamp(36px, 11vw, 64px); }
-      .cta-final .btn { width: 100%; justify-content: center; }
-      .footer-top { gap: 40px; }
-      .footer-brand { max-width: 100%; }
-      .footer-brand .logo { justify-content: center; }
-      .footer-brand p { text-align: center; }
-      .footer-col { text-align: center; }
-      .footer-col ul { align-items: center; }
-      .footer-col a { justify-content: center; }
-      .wa-fab { width: 52px; height: 52px; bottom: 20px; right: 20px; }
-      .wa-fab svg { width: 22px; height: 22px; }
-    }
-
-    @media (max-width: 600px) {
-      .container { padding: 0 20px; }
-      .hero h1 { font-size: clamp(38px, 12vw, 64px); }
-      .nav-right .btn { display: none; }
-      .proceso-steps { grid-template-columns: 1fr; }
-      .cta-big { font-size: clamp(32px, 11vw, 56px); }
-      .section-title { font-size: clamp(32px, 10vw, 56px); }
-      .stat-block { min-width: 120px; padding: 16px 12px; }
-      .stat-num { font-size: 2rem; }
-      .card { padding: 28px 20px; }
-      .card h3 { font-size: 1.4rem; }
-      .ticker { font-size: 0.75rem; padding: 14px 0; }
-      .logo-mark { width: 64px; height: 64px; }
-      .logo-info strong { font-size: 1.2rem; }
-      .logo-info small { font-size: 0.62rem; }
-    }
-
-    @media (max-width: 400px) {
-      .hero h1 { font-size: clamp(34px, 11vw, 52px); }
-      .section-title { font-size: clamp(28px, 9vw, 48px); }
-      .stat-num { font-size: 1.6rem; }
-      .stat-label { font-size: 0.65rem; }
-      .card { padding: 24px 16px; }
-      .btn { padding: 14px 24px; font-size: 0.8rem; }
+      .contacto-map { height: 320px; }
+      .contacto { padding: 60px 0 50px; }
     }
   </style>
-</head>
-
-<body>
-
-  <!-- Grain -->
-  <div class="grain" aria-hidden="true"></div>
-
-  <!-- Custom cursor -->
-  <div id="cursor-dot" aria-hidden="true"></div>
-  <div id="cursor-ring" aria-hidden="true"></div>
-
-  <!-- Progress bar -->
-  <div id="progress" aria-hidden="true"></div>
-
-  <!-- ══════════════════════════════════════
-       NAVBAR
-  ══════════════════════════════════════ -->
-  <header>
-    <nav class="navbar" id="navbar" aria-label="Navegación principal">
+  1029|</head>
+  1030|
+  1031|<body>
+  1032|
+  1033|  <!-- Grain -->
+  1034|  <div class="grain" aria-hidden="true"></div>
+  1035|
+  1036|  <!-- Custom cursor -->
+  1037|  <div id="cursor-dot" aria-hidden="true"></div>
+  1038|  <div id="cursor-ring" aria-hidden="true"></div>
+  1039|
+  1040|  <!-- Progress bar -->
+  1041|  <div id="progress" aria-hidden="true"></div>
+  1042|
+  1043|  <!-- ══════════════════════════════════════
+  1044|       NAVBAR
+  1045|  ══════════════════════════════════════ -->
+  1046|  <header>
+  1047|    <nav class="navbar" id="navbar" aria-label="Navegación principal">
+  1048|      <div class="container">
+  1049|        <!-- Izquierda: logo -->
+  1050|        <div class="nav-left">
+  1051|          <a class="logo" href="/" aria-label="OC Garage — Inicio">
+  1052|            <div class="logo-mark" aria-hidden="true"><img src="assets/logo.png" alt="" aria-hidden="true"></div>
+  1053|            <div class="logo-info">
+  1054|              <strong>OC GARAGE</strong>
+  1055|              <small>CHAPA Y PINTURA</small>
+  1056|              <small style="font-size:0.65rem;letter-spacing:0.18em;margin-top:1px;">MDQ</small>
+  1057|            </div>
+  1058|          </a>
+  1059|        </div>
+  1060|
+  1061|        <!-- Centro: vacío -->
+  1062|        <div class="nav-center"></div>
+  1063|
+  1064|        <!-- Derecha: CTA (desktop) + hamburguesa (siempre) -->
+  1065|        <div class="nav-right">
+  1066|          <div class="nav-right-desktop">
+  1067|            <a class="nav-ig" href="https://instagram.com/ocgarage.mdp" target="_blank" rel="noopener noreferrer" aria-label="Seguinos en Instagram">
+  1068|              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+  1069|                <rect x="2" y="2" width="20" height="20" rx="5"/>
+  1070|                <circle cx="12" cy="12" r="4"/>
+  1071|                <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+  1072|              </svg>
+  1073|              @ocgarage.mdp
+  1074|            </a>
+  1075|            <a class="btn btn-red" href="https://wa.me/5492236856543?text=Hola!%20Quiero%20consultar%20un%20presupuesto" target="_blank" rel="noopener noreferrer">Presupuesto</a>
+  1076|          </div>
+  1077|          <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+  1078|            <span></span>
+  1079|            <span></span>
+  1080|            <span></span>
+  1081|          </button>
+  1082|        </div>
+  1083|      </div>
+  1084|    </nav>
+  1085|  </header>
+  1086|
+  1087|  <!-- Off-canvas overlay -->
+  1088|  <div class="offcanvas-overlay" id="offcanvasOverlay"></div>
+  1089|
+  1090|  <!-- Off-canvas menu -->
+  1091|  <div class="offcanvas-menu" id="offcanvasMenu" aria-hidden="true">
+  1092|    <button class="offcanvas-close" id="offcanvasClose" aria-label="Cerrar menú">
+  1093|      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+  1094|        <line x1="6" y1="6" x2="18" y2="18"/>
+  1095|        <line x1="18" y1="6" x2="6" y2="18"/>
+  1096|      </svg>
+  1097|    </button>
+  1098|    <a href="#servicios">Servicios</a>
+  1099|    <a href="#proceso">Proceso</a>
+  1100|    <a href="#contacto">Contacto</a>
+  1101|    <a href="https://instagram.com/ocgarage.mdp" target="_blank" rel="noopener noreferrer">Instagram</a>
+  1102|    <a class="btn btn-red" href="https://wa.me/5492236856543?text=Hola!%20Quiero%20consultar%20un%20presupuesto" target="_blank" rel="noopener noreferrer">Pedir Presupuesto</a>
+  1103|    <div class="offcanvas-footer">Mar del Plata · Est. 1997</div>
+  1104|  </div>
+  1105|
+  1106|  <main>
+  1107|    <!-- ══════════════════════════════════════
+  1108|         HERO
+  1109|    ══════════════════════════════════════ -->
+  1110|    <section class="hero" aria-labelledby="hero-h1">
+  1111|      <div class="hero-grid" aria-hidden="true"></div>
+  1112|      <div class="hero-glow" aria-hidden="true"></div>
+  1113|      <div class="hero-line" aria-hidden="true"></div>
+  1114|      <div class="hero-wm" aria-hidden="true"><img src="assets/logo.png" alt="" aria-hidden="true"></div>
+  1115|
+  1116|      <div class="container">
+  1117|        <div class="hero-left">
+  1118|          <p class="hero-tag" id="hero-tag-el">Aseguradoras · Particulares · Mar del Plata</p>
+  1119|
+  1120|          <h1 id="hero-h1">
+  1121|            <span class="reveal-line"><span class="rl-inner">Excelencia</span></span>
+  1122|            <span class="reveal-line"><span class="rl-inner">en chapa y</span></span>
+  1123|            <span class="reveal-line"><span class="rl-inner"><em>pintura</em></span></span>
+  1124|          </h1>
+  1125|
+  1126|          <p class="hero-sub" id="hero-sub">
+  1127|            Taller de referencia para aseguradoras y clientes particulares en Mar del Plata. Más de una década de trayectoria, calidad técnica comprobada y plazos que se cumplen.
+  1128|          </p>
+  1129|
+  1130|          <div class="hero-ctas" id="hero-ctas">
+  1131|            <a class="btn btn-wa"
+  1132|               href="https://wa.me/5492236856543?text=Hola!%20Quiero%20pedir%20un%20presupuesto"
+  1133|               target="_blank" rel="noopener noreferrer"
+  1134|               aria-label="Pedir presupuesto por WhatsApp">
+  1135|              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+  1136|                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+  1137|                <path d="M12.05 2C6.495 2 2 6.495 2 12.05c0 1.87.487 3.628 1.34 5.155L2 22l4.942-1.299A10.01 10.01 0 0012.05 22C17.605 22 22 17.505 22 11.95 22 6.495 17.505 2 12.05 2zm0 18.21a8.179 8.179 0 01-4.17-1.143l-.299-.178-3.095.813.83-3.01-.195-.309A8.183 8.183 0 013.79 11.95C3.79 7.437 7.437 3.79 12.05 3.79c4.614 0 8.26 3.647 8.26 8.16 0 4.614-3.646 8.26-8.26 8.26z"/>
+  1138|              </svg>
+  1139|              Pedir presupuesto
+  1140|            </a>
+  1141|            <a class="btn btn-ghost" href="tel:+549****6543" aria-label="Llamar al taller">Llamar al taller</a>
+  1142|          </div>
+  1143|        </div>
+  1144|
+  1145|        <div class="hero-right" id="hero-stats">
+  1146|          <div class="stat-block">
+  1147|            <div class="stat-num"><span class="counter" data-target="10">0</span><sup>+ años</sup></div>
+  1148|            <div class="stat-label">De trayectoria profesional</div>
+  1149|          </div>
+  1150|          <div class="stat-block">
+  1151|            <div class="stat-num"><span class="counter" data-target="500">0</span><sup>+</sup></div>
+  1152|            <div class="stat-label">Siniestros reparados</div>
+  1153|          </div>
+  1154|          <div class="stat-block">
+  1155|            <div class="stat-num"><span class="counter" data-target="15">0</span><sup>+</sup></div>
+  1156|            <div class="stat-label">Aseguradoras con las que trabajamos</div>
+  1157|          </div>
+  1158|        </div>
+  1159|      </div>
+  1160|    </section>
+  1161|
+  1162|    <!-- ══════════════════════════════════════
+  1163|         TICKER
+  1164|    ══════════════════════════════════════ -->
+  1165|    <div class="ticker-wrap" aria-label="Valores del taller" role="marquee">
+  1166|      <div class="ticker-track" id="ticker-track">
+  1167|        <!-- duplicated for infinite loop -->
+  1168|        <div class="ticker-item">Precisión <span class="ticker-sep" aria-hidden="true"></span></div>
+  1169|        <div class="ticker-item">Confianza <span class="ticker-sep" aria-hidden="true"></span></div>
+  1170|        <div class="ticker-item">Calidad <span class="ticker-sep" aria-hidden="true"></span></div>
+  1171|        <div class="ticker-item">Oficio <span class="ticker-sep" aria-hidden="true"></span></div>
+  1172|        <div class="ticker-item">Mar del Plata <span class="ticker-sep" aria-hidden="true"></span></div>
+  1173|        <div class="ticker-item">Taller de Referencia <span class="ticker-sep" aria-hidden="true"></span></div>
+  1174|        <div class="ticker-item">Precisión <span class="ticker-sep" aria-hidden="true"></span></div>
+  1175|        <div class="ticker-item">Confianza <span class="ticker-sep" aria-hidden="true"></span></div>
+  1176|        <div class="ticker-item">Calidad Técnica <span class="ticker-sep" aria-hidden="true"></span></div>
+  1177|        <div class="ticker-item">Oficio Profesional <span class="ticker-sep" aria-hidden="true"></span></div>
+  1178|        <div class="ticker-item">Mar del Plata <span class="ticker-sep" aria-hidden="true"></span></div>
+  1179|        <div class="ticker-item">Aseguradoras &amp; Particulares <span class="ticker-sep" aria-hidden="true"></span></div>
+  1180|      </div>
+  1181|    </div>
+  1182|
+  1183|    <!-- ══════════════════════════════════════
+  1184|         SERVICIOS
+  1185|    ══════════════════════════════════════ -->
+  1186|    <section class="servicios" id="servicios" aria-labelledby="s-title">
+  1187|      <div class="container">
+  1188|        <div class="section-head">
+  1189|          <div>
+  1190|            <p class="s-tag">Lo que hacemos</p>
+  1191|            <h2 class="s-title" id="s-title">
+  1192|              <span class="reveal-line"><span class="rl-inner">Nuestros</span></span>
+  1193|              <span class="reveal-line"><span class="rl-inner"><em>Servicios</em></span></span>
+  1194|            </h2>
+  1195|          </div>
+  1196|          <p class="s-desc">
+  1197|            Chapa y pintura de alta calidad. Sin atajos, sin medias tintas. Cada trabajo sale del taller como tiene que salir — impecable.
+  1198|          </p>
+  1199|        </div>
+  1200|
+  1201|        <div class="cards-grid">
+  1202|          <!-- Chapa -->
+  1203|          <article class="card">
+  1204|            <div class="card-num" aria-hidden="true">01</div>
+  1205|            <div class="card-icon" aria-hidden="true">
+  1206|              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  1207|                <path d="M14.5 10.5L19 6M5 19l6.5-6.5M6 18l8.5-8.5m0 0L17 7l-2.5 2.5"/>
+  1208|              </svg>
+  1209|            </div>
+  1210|            <h3 class="card-title">Chapa</h3>
+  1211|            <p class="card-desc">Reparación profesional de carrocería. Abolladuras, deformaciones y daños estructurales resueltos con técnica de primer nivel.</p>
+  1212|            <ul class="card-list" aria-label="Trabajos de chapa">
+  1213|              <li>Reparación de abolladuras (PDR)</li>
+  1214|              <li>Enderezado de carrocería</li>
+  1215|              <li>Soldadura y reemplazo de paneles</li>
+  1216|              <li>Preparación de superficie</li>
+  1217|            </ul>
+  1218|          </article>
+  1219|
+  1220|          <!-- Pintura -->
+  1221|          <article class="card">
+  1222|            <div class="card-num" aria-hidden="true">02</div>
+  1223|            <div class="card-icon" aria-hidden="true">
+  1224|              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  1225|                <path d="M12 19l-7-7 9-9 7 7-9 9z"/>
+  1226|                <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/>
+  1227|                <circle cx="11" cy="11" r="2"/>
+  1228|              </svg>
+  1229|            </div>
+  1230|            <h3 class="card-title">Pintura</h3>
+  1231|            <p class="card-desc">Pintura a pistola con materiales de alta gama. Igualación de color exacta, terminación brillante y duración garantizada.</p>
+  1232|            <ul class="card-list" aria-label="Trabajos de pintura">
+  1233|              <li>Pintura de piezas y sectores</li>
+  1234|              <li>Pintura completa del vehículo</li>
+  1235|              <li>Igualación de color computerizada</li>
+  1236|              <li>Pulido y abrillantado final</li>
+  1237|            </ul>
+  1238|          </article>
+  1239|
+  1240|          <!-- Presupuesto -->
+  1241|          <article class="card">
+  1242|            <div class="card-num" aria-hidden="true">03</div>
+  1243|            <div class="card-icon" aria-hidden="true">
+  1244|              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  1245|                <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2"/>
+  1246|                <rect x="9" y="3" width="6" height="4" rx="1"/>
+  1247|                <path d="M9 12h6M9 16h4"/>
+  1248|              </svg>
+  1249|            </div>
+  1250|            <h3 class="card-title">Peritaje y Siniestros</h3>
+  1251|            <p class="card-desc">Amplia experiencia en trabajo con aseguradoras. Documentación técnica completa, presupuestos detallados y coordinación directa con peritos.</p>
+  1252|            <ul class="card-list" aria-label="Servicios para aseguradoras">
+  1253|              <li>Atención de siniestros con aseguradoras</li>
+  1254|              <li>Presupuestos técnicos para peritos</li>
+  1255|              <li>Documentación fotográfica del proceso</li>
+  1256|              <li>Garantía en materiales y mano de obra</li>
+  1257|            </ul>
+  1258|          </article>
+  1259|        </div>
+  1260|      </div>
+  1261|    </section>
+  1262|
+  1263|    <!-- ══════════════════════════════════════
+  1264|         PROCESO
+  1265|    ══════════════════════════════════════ -->
+  1266|    <section class="proceso" aria-labelledby="proceso-title">
+  1267|      <div class="container">
+  1268|        <p class="s-tag">Cómo trabajamos</p>
+  1269|        <h2 class="s-title" id="proceso-title">
+  1270|          <span class="reveal-line"><span class="rl-inner">El <em>proceso</em></span></span>
+  1271|        </h2>
+  1272|
+  1273|        <div class="proceso-steps">
+  1274|          <div class="step" data-n="01">
+  1275|            <div class="step-label">Paso 01</div>
+  1276|            <div class="step-title">Diagnóstico</div>
+  1277|            <p class="step-desc">Revisamos el vehículo y evaluamos el daño sin compromiso. Te explicamos qué necesita y por qué.</p>
+  1278|          </div>
+  1279|          <div class="step" data-n="02">
+  1280|            <div class="step-label">Paso 02</div>
+  1281|            <div class="step-title">Presupuesto</div>
+  1282|            <p class="step-desc">Recibís un presupuesto claro y detallado. Sin letras chicas. Precio acordado, precio final.</p>
+  1283|          </div>
+  1284|          <div class="step" data-n="03">
+  1285|            <div class="step-label">Paso 03</div>
+  1286|            <div class="step-title">Trabajo</div>
+  1287|            <p class="step-desc">Ejecutamos con precisión. Chapa, preparación y pintura bajo los más altos estándares de calidad.</p>
+  1288|          </div>
+  1289|          <div class="step" data-n="04">
+  1290|            <div class="step-label">Paso 04</div>
+  1291|            <div class="step-title">Entrega</div>
+  1292|            <p class="step-desc">Tu auto listo en el plazo prometido. Revisión final con vos y garantía en todos los trabajos.</p>
+  1293|          </div>
+  1294|        </div>
+  1295|      </div>
+  1296|    </section>
+  1297|
+  1298|    <!-- ══════════════════════════════════════
+  1299|         CTA FINAL
+  1300|    ══════════════════════════════════════ -->
+  1301|    <section class="cta-section" aria-labelledby="cta-h2">
+  1302|      <div class="container">
+  1303|        <h2 class="cta-big" id="cta-h2">
+  1304|          <span class="reveal-line"><span class="rl-inner">Pedí tu</span></span>
+  1305|          <span class="reveal-line"><span class="rl-inner"><em>presupuesto</em></span></span>
+  1306|        </h2>
+  1307|        <p class="cta-sub">Aseguradoras, peritos y clientes particulares: trabajamos con seriedad, documentación y tiempos reales. Contactanos y coordinamos.</p>
+  1308|        <div class="cta-btns">
+  1309|          <a class="btn btn-wa"
+  1310|             href="https://wa.me/5492236856543?text=Hola!%20Quiero%20pedir%20un%20presupuesto%20para%20mi%20auto"
+  1311|             target="_blank" rel="noopener noreferrer"
+  1312|             aria-label="Contactar por WhatsApp">
+  1313|            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+  1314|              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+  1315|              <path d="M12.05 2C6.495 2 2 6.495 2 12.05c0 1.87.487 3.628 1.34 5.155L2 22l4.942-1.299A10.01 10.01 0 0012.05 22C17.605 22 22 17.505 22 11.95 22 6.495 17.505 2 12.05 2zm0 18.21a8.179 8.179 0 01-4.17-1.143l-.299-.178-3.095.813.83-3.01-.195-.309A8.183 8.183 0 013.79 11.95C3.79 7.437 7.437 3.79 12.05 3.79c4.614 0 8.26 3.647 8.26 8.16 0 4.614-3.646 8.26-8.26 8.26z"/>
+  1316|            </svg>
+  1317|            Escribir por WhatsApp
+  1318|          </a>
+  1319|          <a class="btn btn-ghost" href="tel:+549****6543" aria-label="Llamar al taller">Llamar al taller</a>
+  1320|        </div>
+  1321|      </div>
+  1322|    </section>
+  1323|    <!-- ════════════════════════════════════
+         CONTACTO
+    ════════════════════════════════════ -->
+    <section class="contacto" id="contacto" aria-labelledby="contacto-title">
       <div class="container">
-        <!-- Izquierda: logo -->
-        <div class="nav-left">
-          <a class="logo" href="/" aria-label="OC Garage — Inicio">
-            <div class="logo-mark" aria-hidden="true"><img src="assets/logo.png" alt="" aria-hidden="true"></div>
-            <div class="logo-info">
-              <strong>OC GARAGE</strong>
-              <small>CHAPA Y PINTURA</small>
-              <small style="font-size:0.65rem;letter-spacing:0.18em;margin-top:1px;">MDQ</small>
-            </div>
-          </a>
-        </div>
+        <p class="s-tag">Donde estamos</p>
+        <h2 class="s-title" id="contacto-title">
+          <span class="reveal-line"><span class="rl-inner">Contacto y <em>ubicación</em></span></span>
+        </h2>
 
-        <!-- Centro: vacío -->
-        <div class="nav-center"></div>
-
-        <!-- Derecha: CTA (desktop) + hamburguesa (siempre) -->
-        <div class="nav-right">
-          <div class="nav-right-desktop">
-            <a class="nav-ig" href="https://instagram.com/ocgarage.mdp" target="_blank" rel="noopener noreferrer" aria-label="Seguinos en Instagram">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <rect x="2" y="2" width="20" height="20" rx="5"/>
-                <circle cx="12" cy="12" r="4"/>
-                <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
-              </svg>
-              @ocgarage.mdp
-            </a>
-            <a class="btn btn-red" href="https://wa.me/5492236856543?text=Hola!%20Quiero%20consultar%20un%20presupuesto" target="_blank" rel="noopener noreferrer">Presupuesto</a>
+        <div class="contacto-grid">
+          <!-- Mapa -->
+          <div class="contacto-map" aria-label="Mapa de ubicación">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100000!2d-57.57!3d-38.01!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sElcano%207962%2C%20Mar%20del%20Plata!5e0!3m2!1ses!2sar!4v1715000000000!5m2!1ses!2sar"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="OC Garage - Elcano 7962, Mar del Plata">
+            </iframe>
           </div>
-          <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-        </div>
-      </div>
-    </nav>
-  </header>
 
-  <!-- Off-canvas overlay -->
-  <div class="offcanvas-overlay" id="offcanvasOverlay"></div>
-
-  <!-- Off-canvas menu -->
-  <div class="offcanvas-menu" id="offcanvasMenu" aria-hidden="true">
-    <button class="offcanvas-close" id="offcanvasClose" aria-label="Cerrar menú">
-      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-        <line x1="6" y1="6" x2="18" y2="18"/>
-        <line x1="18" y1="6" x2="6" y2="18"/>
-      </svg>
-    </button>
-    <a href="#servicios">Servicios</a>
-    <a href="#proceso">Proceso</a>
-    <a href="#contacto">Contacto</a>
-    <a href="https://instagram.com/ocgarage.mdp" target="_blank" rel="noopener noreferrer">Instagram</a>
-    <a class="btn btn-red" href="https://wa.me/5492236856543?text=Hola!%20Quiero%20consultar%20un%20presupuesto" target="_blank" rel="noopener noreferrer">Pedir Presupuesto</a>
-    <div class="offcanvas-footer">Mar del Plata · Est. 1997</div>
-  </div>
-
-  <main>
-    <!-- ══════════════════════════════════════
-         HERO
-    ══════════════════════════════════════ -->
-    <section class="hero" aria-labelledby="hero-h1">
-      <div class="hero-grid" aria-hidden="true"></div>
-      <div class="hero-glow" aria-hidden="true"></div>
-      <div class="hero-line" aria-hidden="true"></div>
-      <div class="hero-wm" aria-hidden="true"><img src="assets/logo.png" alt="" aria-hidden="true"></div>
-
-      <div class="container">
-        <div class="hero-left">
-          <p class="hero-tag" id="hero-tag-el">Aseguradoras · Particulares · Mar del Plata</p>
-
-          <h1 id="hero-h1">
-            <span class="reveal-line"><span class="rl-inner">Excelencia</span></span>
-            <span class="reveal-line"><span class="rl-inner">en chapa y</span></span>
-            <span class="reveal-line"><span class="rl-inner"><em>pintura</em></span></span>
-          </h1>
-
-          <p class="hero-sub" id="hero-sub">
-            Taller de referencia para aseguradoras y clientes particulares en Mar del Plata. Más de una década de trayectoria, calidad técnica comprobada y plazos que se cumplen.
-          </p>
-
-          <div class="hero-ctas" id="hero-ctas">
-            <a class="btn btn-wa"
-               href="https://wa.me/5492236856543?text=Hola!%20Quiero%20pedir%20un%20presupuesto"
-               target="_blank" rel="noopener noreferrer"
-               aria-label="Pedir presupuesto por WhatsApp">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
-                <path d="M12.05 2C6.495 2 2 6.495 2 12.05c0 1.87.487 3.628 1.34 5.155L2 22l4.942-1.299A10.01 10.01 0 0012.05 22C17.605 22 22 17.505 22 11.95 22 6.495 17.505 2 12.05 2zm0 18.21a8.179 8.179 0 01-4.17-1.143l-.299-.178-3.095.813.83-3.01-.195-.309A8.183 8.183 0 013.79 11.95C3.79 7.437 7.437 3.79 12.05 3.79c4.614 0 8.26 3.647 8.26 8.16 0 4.614-3.646 8.26-8.26 8.26z"/>
-              </svg>
-              Pedir presupuesto
-            </a>
-            <a class="btn btn-ghost" href="tel:+5492236856543" aria-label="Llamar al taller">Llamar al taller</a>
-          </div>
-        </div>
-
-        <div class="hero-right" id="hero-stats">
-          <div class="stat-block">
-            <div class="stat-num"><span class="counter" data-target="10">0</span><sup>+ años</sup></div>
-            <div class="stat-label">De trayectoria profesional</div>
-          </div>
-          <div class="stat-block">
-            <div class="stat-num"><span class="counter" data-target="500">0</span><sup>+</sup></div>
-            <div class="stat-label">Siniestros reparados</div>
-          </div>
-          <div class="stat-block">
-            <div class="stat-num"><span class="counter" data-target="15">0</span><sup>+</sup></div>
-            <div class="stat-label">Aseguradoras con las que trabajamos</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ══════════════════════════════════════
-         TICKER
-    ══════════════════════════════════════ -->
-    <div class="ticker-wrap" aria-label="Valores del taller" role="marquee">
-      <div class="ticker-track" id="ticker-track">
-        <!-- duplicated for infinite loop -->
-        <div class="ticker-item">Precisión <span class="ticker-sep" aria-hidden="true"></span></div>
-        <div class="ticker-item">Confianza <span class="ticker-sep" aria-hidden="true"></span></div>
-        <div class="ticker-item">Calidad <span class="ticker-sep" aria-hidden="true"></span></div>
-        <div class="ticker-item">Oficio <span class="ticker-sep" aria-hidden="true"></span></div>
-        <div class="ticker-item">Mar del Plata <span class="ticker-sep" aria-hidden="true"></span></div>
-        <div class="ticker-item">Taller de Referencia <span class="ticker-sep" aria-hidden="true"></span></div>
-        <div class="ticker-item">Precisión <span class="ticker-sep" aria-hidden="true"></span></div>
-        <div class="ticker-item">Confianza <span class="ticker-sep" aria-hidden="true"></span></div>
-        <div class="ticker-item">Calidad Técnica <span class="ticker-sep" aria-hidden="true"></span></div>
-        <div class="ticker-item">Oficio Profesional <span class="ticker-sep" aria-hidden="true"></span></div>
-        <div class="ticker-item">Mar del Plata <span class="ticker-sep" aria-hidden="true"></span></div>
-        <div class="ticker-item">Aseguradoras &amp; Particulares <span class="ticker-sep" aria-hidden="true"></span></div>
-      </div>
-    </div>
-
-    <!-- ══════════════════════════════════════
-         SERVICIOS
-    ══════════════════════════════════════ -->
-    <section class="servicios" id="servicios" aria-labelledby="s-title">
-      <div class="container">
-        <div class="section-head">
+          <!-- Info + Formulario -->
           <div>
-            <p class="s-tag">Lo que hacemos</p>
-            <h2 class="s-title" id="s-title">
-              <span class="reveal-line"><span class="rl-inner">Nuestros</span></span>
-              <span class="reveal-line"><span class="rl-inner"><em>Servicios</em></span></span>
-            </h2>
-          </div>
-          <p class="s-desc">
-            Chapa y pintura de alta calidad. Sin atajos, sin medias tintas. Cada trabajo sale del taller como tiene que salir — impecable.
-          </p>
-        </div>
-
-        <div class="cards-grid">
-          <!-- Chapa -->
-          <article class="card">
-            <div class="card-num" aria-hidden="true">01</div>
-            <div class="card-icon" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M14.5 10.5L19 6M5 19l6.5-6.5M6 18l8.5-8.5m0 0L17 7l-2.5 2.5"/>
-              </svg>
+            <div class="contacto-info">
+              <div class="contacto-info-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+                <div>
+                  <strong>Dirección</strong>
+                  Elcano 7962, Mar del Plata, Buenos Aires
+                </div>
+              </div>
+              <div class="contacto-info-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+                </svg>
+                <div>
+                  <strong>Teléfono</strong>
+                  <a href="tel:+5492236856543">+54 9 2236 85-6543</a>
+                </div>
+              </div>
+              <div class="contacto-info-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="20" rx="5"/>
+                  <circle cx="12" cy="12" r="4"/>
+                  <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+                </svg>
+                <div>
+                  <strong>Instagram</strong>
+                  <a href="https://instagram.com/ocgarage.mdp" target="_blank" rel="noopener noreferrer">@ocgarage.mdp</a>
+                </div>
+              </div>
             </div>
-            <h3 class="card-title">Chapa</h3>
-            <p class="card-desc">Reparación profesional de carrocería. Abolladuras, deformaciones y daños estructurales resueltos con técnica de primer nivel.</p>
-            <ul class="card-list" aria-label="Trabajos de chapa">
-              <li>Reparación de abolladuras (PDR)</li>
-              <li>Enderezado de carrocería</li>
-              <li>Soldadura y reemplazo de paneles</li>
-              <li>Preparación de superficie</li>
-            </ul>
-          </article>
 
-          <!-- Pintura -->
-          <article class="card">
-            <div class="card-num" aria-hidden="true">02</div>
-            <div class="card-icon" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 19l-7-7 9-9 7 7-9 9z"/>
-                <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/>
-                <circle cx="11" cy="11" r="2"/>
-              </svg>
-            </div>
-            <h3 class="card-title">Pintura</h3>
-            <p class="card-desc">Pintura a pistola con materiales de alta gama. Igualación de color exacta, terminación brillante y duración garantizada.</p>
-            <ul class="card-list" aria-label="Trabajos de pintura">
-              <li>Pintura de piezas y sectores</li>
-              <li>Pintura completa del vehículo</li>
-              <li>Igualación de color computerizada</li>
-              <li>Pulido y abrillantado final</li>
-            </ul>
-          </article>
+            <form class="contacto-form" id="contactForm" onsubmit="return enviarWhatsApp(event)">
+              <label for="cf-nombre">Nombre</label>
+              <input type="text" id="cf-nombre" name="nombre" placeholder="Tu nombre" required>
 
-          <!-- Presupuesto -->
-          <article class="card">
-            <div class="card-num" aria-hidden="true">03</div>
-            <div class="card-icon" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2"/>
-                <rect x="9" y="3" width="6" height="4" rx="1"/>
-                <path d="M9 12h6M9 16h4"/>
-              </svg>
-            </div>
-            <h3 class="card-title">Peritaje y Siniestros</h3>
-            <p class="card-desc">Amplia experiencia en trabajo con aseguradoras. Documentación técnica completa, presupuestos detallados y coordinación directa con peritos.</p>
-            <ul class="card-list" aria-label="Servicios para aseguradoras">
-              <li>Atención de siniestros con aseguradoras</li>
-              <li>Presupuestos técnicos para peritos</li>
-              <li>Documentación fotográfica del proceso</li>
-              <li>Garantía en materiales y mano de obra</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
+              <label for="cf-telefono">Teléfono</label>
+              <input type="tel" id="cf-telefono" name="telefono" placeholder="Tu número de teléfono" required>
 
-    <!-- ══════════════════════════════════════
-         PROCESO
-    ══════════════════════════════════════ -->
-    <section class="proceso" aria-labelledby="proceso-title">
-      <div class="container">
-        <p class="s-tag">Cómo trabajamos</p>
-        <h2 class="s-title" id="proceso-title">
-          <span class="reveal-line"><span class="rl-inner">El <em>proceso</em></span></span>
-        </h2>
+              <label for="cf-mensaje">Mensaje</label>
+              <textarea id="cf-mensaje" name="mensaje" placeholder="¿En qué podemos ayudarte?" required></textarea>
 
-        <div class="proceso-steps">
-          <div class="step" data-n="01">
-            <div class="step-label">Paso 01</div>
-            <div class="step-title">Diagnóstico</div>
-            <p class="step-desc">Revisamos el vehículo y evaluamos el daño sin compromiso. Te explicamos qué necesita y por qué.</p>
+              <button type="submit" class="btn btn-red">Enviar por WhatsApp</button>
+            </form>
           </div>
-          <div class="step" data-n="02">
-            <div class="step-label">Paso 02</div>
-            <div class="step-title">Presupuesto</div>
-            <p class="step-desc">Recibís un presupuesto claro y detallado. Sin letras chicas. Precio acordado, precio final.</p>
-          </div>
-          <div class="step" data-n="03">
-            <div class="step-label">Paso 03</div>
-            <div class="step-title">Trabajo</div>
-            <p class="step-desc">Ejecutamos con precisión. Chapa, preparación y pintura bajo los más altos estándares de calidad.</p>
-          </div>
-          <div class="step" data-n="04">
-            <div class="step-label">Paso 04</div>
-            <div class="step-title">Entrega</div>
-            <p class="step-desc">Tu auto listo en el plazo prometido. Revisión final con vos y garantía en todos los trabajos.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ══════════════════════════════════════
-         CTA FINAL
-    ══════════════════════════════════════ -->
-    <section class="cta-section" aria-labelledby="cta-h2">
-      <div class="container">
-        <h2 class="cta-big" id="cta-h2">
-          <span class="reveal-line"><span class="rl-inner">Pedí tu</span></span>
-          <span class="reveal-line"><span class="rl-inner"><em>presupuesto</em></span></span>
-        </h2>
-        <p class="cta-sub">Aseguradoras, peritos y clientes particulares: trabajamos con seriedad, documentación y tiempos reales. Contactanos y coordinamos.</p>
-        <div class="cta-btns">
-          <a class="btn btn-wa"
-             href="https://wa.me/5492236856543?text=Hola!%20Quiero%20pedir%20un%20presupuesto%20para%20mi%20auto"
-             target="_blank" rel="noopener noreferrer"
-             aria-label="Contactar por WhatsApp">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
-              <path d="M12.05 2C6.495 2 2 6.495 2 12.05c0 1.87.487 3.628 1.34 5.155L2 22l4.942-1.299A10.01 10.01 0 0012.05 22C17.605 22 22 17.505 22 11.95 22 6.495 17.505 2 12.05 2zm0 18.21a8.179 8.179 0 01-4.17-1.143l-.299-.178-3.095.813.83-3.01-.195-.309A8.183 8.183 0 013.79 11.95C3.79 7.437 7.437 3.79 12.05 3.79c4.614 0 8.26 3.647 8.26 8.16 0 4.614-3.646 8.26-8.26 8.26z"/>
-            </svg>
-            Escribir por WhatsApp
-          </a>
-          <a class="btn btn-ghost" href="tel:+5492236856543" aria-label="Llamar al taller">Llamar al taller</a>
         </div>
       </div>
     </section>
   </main>
-
-  <!-- ══════════════════════════════════════
-       FOOTER
-  ══════════════════════════════════════ -->
-  <footer>
-    <div class="container">
-      <div class="footer-top">
-        <div class="footer-brand">
-          <a class="logo" href="/" aria-label="OC Garage — Inicio" style="opacity:1">
-            <div class="logo-mark" aria-hidden="true"><img src="assets/logo.png" alt="" aria-hidden="true"></div>
-            <div class="logo-info">
-              <strong>OC GARAGE</strong>
-              <small>CHAPA Y PINTURA</small>
-              <small style="font-size:0.65rem;letter-spacing:0.18em;margin-top:1px;">MDQ</small>
-            </div>
-          </a>
-          <p>Taller de referencia en chapa y pintura para aseguradoras y particulares en Mar del Plata. Calidad técnica, documentación profesional y plazos cumplidos.</p>
-        </div>
-
-        <div class="footer-col">
-          <h5>Servicios</h5>
-          <ul>
-            <li><a href="#servicios">Chapa automotriz</a></li>
-            <li><a href="#servicios">Pintura automotriz</a></li>
-            <li><a href="#servicios">Diagnóstico y presupuesto</a></li>
-            <li><a href="#servicios">Reparación de abolladuras</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h5>Contacto</h5>
-          <ul>
-            <li><span>Mar del Plata, Buenos Aires</span></li>
-            <li><a href="tel:+5492236856543">+54 9 2236 85-6543</a></li>
-            <li><a href="https://instagram.com/ocgarage.mdp" target="_blank" rel="noopener noreferrer">@ocgarage.mdp</a></li>
-            <li><a href="https://ocgaragemdq.com">ocgaragemdq.com</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <p>© 2026 OC Garage · Mar del Plata. Todos los derechos reservados.</p>
-        <p><a href="https://ocgaragemdq.com">ocgaragemdq.com</a></p>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Floating WhatsApp -->
-  <a class="wa-fab" id="wa-fab"
-     href="https://wa.me/5492236856543?text=Hola!%20Quiero%20consultar%20un%20presupuesto"
-     target="_blank" rel="noopener noreferrer"
-     aria-label="Contactar por WhatsApp">
-    <svg viewBox="0 0 24 24" aria-hidden="true">
-      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
-      <path d="M12.05 2C6.495 2 2 6.495 2 12.05c0 1.87.487 3.628 1.34 5.155L2 22l4.942-1.299A10.01 10.01 0 0012.05 22C17.605 22 22 17.505 22 11.95 22 6.495 17.505 2 12.05 2zm0 18.21a8.179 8.179 0 01-4.17-1.143l-.299-.178-3.095.813.83-3.01-.195-.309A8.183 8.183 0 013.79 11.95C3.79 7.437 7.437 3.79 12.05 3.79c4.614 0 8.26 3.647 8.26 8.16 0 4.614-3.646 8.26-8.26 8.26z"/>
-    </svg>
-  </a>
-
-  <!-- ══════════════════════════════════════
-       GSAP
-  ══════════════════════════════════════ -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-
-  <script>
-  (function() {
-    gsap.registerPlugin(ScrollTrigger);
-
-    const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-    /* ── Custom Cursor ─────────────────────── */
-    const dot  = document.getElementById('cursor-dot');
-    const ring = document.getElementById('cursor-ring');
-
-    if (window.matchMedia('(hover: hover)').matches && dot && ring) {
-      let mx = 0, my = 0;
-
-      window.addEventListener('mousemove', e => {
-        mx = e.clientX; my = e.clientY;
-        gsap.to(dot,  { x: mx, y: my, duration: 0.05, ease: 'none' });
-        gsap.to(ring, { x: mx, y: my, duration: 0.18, ease: 'power2.out' });
-      });
-
-      document.querySelectorAll('a, button, .card, .step').forEach(el => {
-        el.addEventListener('mouseenter', () => ring.classList.add('hover'));
-        el.addEventListener('mouseleave', () => ring.classList.remove('hover'));
-      });
-    }
-
-    /* ── Progress Bar ──────────────────────── */
-    const prog = document.getElementById('progress');
-    window.addEventListener('scroll', () => {
-      const pct = window.scrollY / (document.body.scrollHeight - window.innerHeight);
-      gsap.set(prog, { scaleX: pct });
-    }, { passive: true });
-
-    /* ── Navbar scroll ─────────────────────── */
-    const navbar = document.getElementById('navbar');
-    ScrollTrigger.create({
-      start: 60,
-      onEnter:     () => navbar.classList.add('scrolled'),
-      onLeaveBack: () => navbar.classList.remove('scrolled'),
-    });
-
-    /* ── Hero tag line reveal ──────────────── */
-    const heroTag = document.getElementById('hero-tag-el');
-    if (!prefersReduced) {
-      gsap.from(heroTag.querySelector('::before') || heroTag, { /* tag line */
-        opacity: 0, x: -20, duration: 0.8, delay: 0.2, ease: 'power3.out'
-      });
-      // Eyebrow
-      gsap.fromTo(heroTag,
-        { opacity: 0, x: -16 },
-        { opacity: 1, x: 0, duration: 0.7, delay: 0.25, ease: 'power3.out' }
-      );
-
-      /* h1 line reveal */
-      gsap.fromTo('.hero h1 .rl-inner',
-        { yPercent: 110, opacity: 0 },
-        { yPercent: 0, opacity: 1, duration: 1, delay: 0.45, stagger: 0.1, ease: 'power4.out' }
-      );
-
-      /* Sub + CTA */
-      gsap.fromTo('#hero-sub',
-        { opacity: 0, y: 20 },
-        { opacity: 1, y: 0, duration: 0.8, delay: 0.85, ease: 'power3.out' }
-      );
-      gsap.fromTo('#hero-ctas .btn',
-        { opacity: 0, y: 16 },
-        { opacity: 1, y: 0, duration: 0.7, delay: 1.0, stagger: 0.1, ease: 'power3.out' }
-      );
-
-      /* Stats */
-      gsap.fromTo('#hero-stats .stat-block',
-        { opacity: 0, y: 24 },
-        { opacity: 1, y: 0, duration: 0.7, delay: 0.9, stagger: 0.12, ease: 'power3.out' }
-      );
-
-      /* Navbar logo */
-      gsap.to('.logo', { opacity: 1, duration: 0.6, delay: 0.1, ease: 'power2.out' });
-      gsap.to('.nav-right', { opacity: 1, duration: 0.6, delay: 0.2, ease: 'power2.out' });
-
-      /* WA fab */
-      gsap.to('#wa-fab', { opacity: 1, scale: 1, duration: 0.6, delay: 1.4, ease: 'back.out(2)' });
-    } else {
-      /* reduced motion: just show everything */
-      gsap.set(['.logo', '.nav-right', '#wa-fab', '#hero-sub', '#hero-ctas .btn',
-                 '#hero-stats .stat-block', heroTag, '.hero h1 .rl-inner'], { opacity: 1, clearProps: 'transform' });
-    }
-
-    /* ── Stat counter ──────────────────────── */
-    document.querySelectorAll('.counter').forEach(el => {
-      const target = parseInt(el.dataset.target, 10);
-      ScrollTrigger.create({
-        trigger: el,
-        start: 'top 85%',
-        once: true,
-        onEnter: () => {
-          gsap.fromTo(el, { innerText: 0 }, {
-            innerText: target,
-            duration: 1.8,
-            ease: 'power2.out',
-            snap: { innerText: 1 },
-            onUpdate() { el.textContent = Math.ceil(parseFloat(el.textContent)); }
-          });
-        }
-      });
-    });
-
-    /* ── Ticker (GSAP) ─────────────────────── */
-    const track = document.getElementById('ticker-track');
-    if (track) {
-      const totalW = track.scrollWidth / 2; // half because content is doubled
-      gsap.to(track, {
-        x: -totalW,
-        duration: 28,
-        repeat: -1,
-        ease: 'none',
-        modifiers: {
-          x: gsap.utils.unitize(v => parseFloat(v) % totalW)
-        }
-      });
-    }
-
-    /* ── Section reveal lines (servicios / proceso) ── */
-    if (!prefersReduced) {
-      gsap.utils.toArray('.s-title .rl-inner, .cta-big .rl-inner').forEach(el => {
-        gsap.fromTo(el,
-          { yPercent: 110, opacity: 0 },
-          {
-            yPercent: 0, opacity: 1,
-            duration: 0.9, ease: 'power4.out',
-            scrollTrigger: { trigger: el, start: 'top 88%', toggleActions: 'play none none none' }
-          }
-        );
-      });
-
-      /* Cards stagger */
-      gsap.from('.card',
-        {
-          y: 48,
-          duration: 0.75, stagger: 0.13, ease: 'power3.out',
-          scrollTrigger: { trigger: '.cards-grid', start: 'top 80%' }
-        }
-      );
-
-      /* Steps stagger */
-      gsap.from('.step',
-        {
-          y: 36,
-          duration: 0.65, stagger: 0.1, ease: 'power3.out',
-          scrollTrigger: { trigger: '.proceso-steps', start: 'top 82%' }
-        }
-      );
-
-      /* Footer fade */
-      gsap.from('footer',
-        {
-          y: 20,
-          duration: 0.8, ease: 'power2.out',
-          scrollTrigger: { trigger: 'footer', start: 'top 90%' }
-        }
-      );
-    }
-
-    /* ── Hero glow parallax ────────────────── */
-    if (!prefersReduced) {
-      gsap.to('.hero-glow', {
-        y: 120,
-        ease: 'none',
-        scrollTrigger: { trigger: '.hero', start: 'top top', end: 'bottom top', scrub: true }
-      });
-      gsap.to('.hero-wm', {
-        y: 80,
-        ease: 'none',
-        scrollTrigger: { trigger: '.hero', start: 'top top', end: 'bottom top', scrub: true }
-      });
-    }
-
-    /* Off-canvas menu toggle */
-    const navToggle = document.getElementById('navToggle');
-    const offcanvasMenu = document.getElementById('offcanvasMenu');
-    const offcanvasOverlay = document.getElementById('offcanvasOverlay');
-    const offcanvasClose = document.getElementById('offcanvasClose');
-
-    function openOffcanvas() {
-      offcanvasMenu.classList.add('active');
-      offcanvasOverlay.classList.add('active');
-      navToggle.classList.add('active');
-      navToggle.setAttribute('aria-expanded', 'true');
-      offcanvasMenu.setAttribute('aria-hidden', 'false');
-      document.body.style.overflow = 'hidden';
-    }
-    function closeOffcanvas() {
-      offcanvasMenu.classList.remove('active');
-      offcanvasOverlay.classList.remove('active');
-      navToggle.classList.remove('active');
-      navToggle.setAttribute('aria-expanded', 'false');
-      offcanvasMenu.setAttribute('aria-hidden', 'true');
-      document.body.style.overflow = '';
-    }
-
-    if (navToggle && offcanvasMenu) {
-      navToggle.addEventListener('click', () => {
-        const isOpen = offcanvasMenu.classList.contains('active');
-        isOpen ? closeOffcanvas() : openOffcanvas();
-      });
-      offcanvasClose.addEventListener('click', closeOffcanvas);
-      offcanvasOverlay.addEventListener('click', closeOffcanvas);
-      offcanvasMenu.querySelectorAll('a').forEach(link => {
-        link.addEventListener('click', closeOffcanvas);
-      });
-      document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape' && offcanvasMenu.classList.contains('active')) closeOffcanvas();
-      });
-    }
-
-  })();
-  </script>
-</body>
-</html>
+  1324|
+  1325|  <!-- ══════════════════════════════════════
+  1326|       FOOTER
+  1327|  ══════════════════════════════════════ -->
+  1328|  <footer>
+  1329|    <div class="container">
+  1330|      <div class="footer-top">
+  1331|        <div class="footer-brand">
+  1332|          <a class="logo" href="/" aria-label="OC Garage — Inicio" style="opacity:1">
+  1333|            <div class="logo-mark" aria-hidden="true"><img src="assets/logo.png" alt="" aria-hidden="true"></div>
+  1334|            <div class="logo-info">
+  1335|              <strong>OC GARAGE</strong>
+  1336|              <small>CHAPA Y PINTURA</small>
+  1337|              <small style="font-size:0.65rem;letter-spacing:0.18em;margin-top:1px;">MDQ</small>
+  1338|            </div>
+  1339|          </a>
+  1340|          <p>Taller de referencia en chapa y pintura para aseguradoras y particulares en Mar del Plata. Calidad técnica, documentación profesional y plazos cumplidos.</p>
+  1341|        </div>
+  1342|
+  1343|        <div class="footer-col">
+  1344|          <h5>Servicios</h5>
+  1345|          <ul>
+  1346|            <li><a href="#servicios">Chapa automotriz</a></li>
+  1347|            <li><a href="#servicios">Pintura automotriz</a></li>
+  1348|            <li><a href="#servicios">Diagnóstico y presupuesto</a></li>
+  1349|            <li><a href="#servicios">Reparación de abolladuras</a></li>
+  1350|          </ul>
+  1351|        </div>
+  1352|
+  1353|        <div class="footer-col">
+  1354|          <h5>Contacto</h5>
+  1355|          <ul>
+  1356|            <li><span>Mar del Plata, Buenos Aires</span></li>
+  1357|            <li><a href="tel:+549****6543">+54 9 2236 85-6543</a></li>
+  1358|            <li><a href="https://instagram.com/ocgarage.mdp" target="_blank" rel="noopener noreferrer">@ocgarage.mdp</a></li>
+  1359|            <li><a href="https://ocgaragemdq.com">ocgaragemdq.com</a></li>
+  1360|          </ul>
+  1361|        </div>
+  1362|      </div>
+  1363|
+  1364|      <div class="footer-bottom">
+  1365|        <p>© 2026 OC Garage · Mar del Plata. Todos los derechos reservados.</p>
+  1366|        <p><a href="https://ocgaragemdq.com">ocgaragemdq.com</a></p>
+  1367|      </div>
+  1368|    </div>
+  1369|  </footer>
+  1370|
+  1371|  <!-- Floating WhatsApp -->
+  1372|  <a class="wa-fab" id="wa-fab"
+  1373|     href="https://wa.me/5492236856543?text=Hola!%20Quiero%20consultar%20un%20presupuesto"
+  1374|     target="_blank" rel="noopener noreferrer"
+  1375|     aria-label="Contactar por WhatsApp">
+  1376|    <svg viewBox="0 0 24 24" aria-hidden="true">
+  1377|      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+  1378|      <path d="M12.05 2C6.495 2 2 6.495 2 12.05c0 1.87.487 3.628 1.34 5.155L2 22l4.942-1.299A10.01 10.01 0 0012.05 22C17.605 22 22 17.505 22 11.95 22 6.495 17.505 2 12.05 2zm0 18.21a8.179 8.179 0 01-4.17-1.143l-.299-.178-3.095.813.83-3.01-.195-.309A8.183 8.183 0 013.79 11.95C3.79 7.437 7.437 3.79 12.05 3.79c4.614 0 8.26 3.647 8.26 8.16 0 4.614-3.646 8.26-8.26 8.26z"/>
+  1379|    </svg>
+  1380|  </a>
+  1381|
+  1382|  <!-- ══════════════════════════════════════
+  1383|       GSAP
+  1384|  ══════════════════════════════════════ -->
+  1385|  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  1386|  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  1387|
+  1388|  <script>
+  1389|  (function() {
+  1390|    gsap.registerPlugin(ScrollTrigger);
+  1391|
+  1392|    const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  1393|
+  1394|    /* ── Custom Cursor ─────────────────────── */
+  1395|    const dot  = document.getElementById('cursor-dot');
+  1396|    const ring = document.getElementById('cursor-ring');
+  1397|
+  1398|    if (window.matchMedia('(hover: hover)').matches && dot && ring) {
+  1399|      let mx = 0, my = 0;
+  1400|
+  1401|      window.addEventListener('mousemove', e => {
+  1402|        mx = e.clientX; my = e.clientY;
+  1403|        gsap.to(dot,  { x: mx, y: my, duration: 0.05, ease: 'none' });
+  1404|        gsap.to(ring, { x: mx, y: my, duration: 0.18, ease: 'power2.out' });
+  1405|      });
+  1406|
+  1407|      document.querySelectorAll('a, button, .card, .step').forEach(el => {
+  1408|        el.addEventListener('mouseenter', () => ring.classList.add('hover'));
+  1409|        el.addEventListener('mouseleave', () => ring.classList.remove('hover'));
+  1410|      });
+  1411|    }
+  1412|
+  1413|    /* ── Progress Bar ──────────────────────── */
+  1414|    const prog = document.getElementById('progress');
+  1415|    window.addEventListener('scroll', () => {
+  1416|      const pct = window.scrollY / (document.body.scrollHeight - window.innerHeight);
+  1417|      gsap.set(prog, { scaleX: pct });
+  1418|    }, { passive: true });
+  1419|
+  1420|    /* ── Navbar scroll ─────────────────────── */
+  1421|    const navbar = document.getElementById('navbar');
+  1422|    ScrollTrigger.create({
+  1423|      start: 60,
+  1424|      onEnter:     () => navbar.classList.add('scrolled'),
+  1425|      onLeaveBack: () => navbar.classList.remove('scrolled'),
+  1426|    });
+  1427|
+  1428|    /* ── Hero tag line reveal ──────────────── */
+  1429|    const heroTag = document.getElementById('hero-tag-el');
+  1430|    if (!prefersReduced) {
+  1431|      gsap.from(heroTag.querySelector('::before') || heroTag, { /* tag line */
+  1432|        opacity: 0, x: -20, duration: 0.8, delay: 0.2, ease: 'power3.out'
+  1433|      });
+  1434|      // Eyebrow
+  1435|      gsap.fromTo(heroTag,
+  1436|        { opacity: 0, x: -16 },
+  1437|        { opacity: 1, x: 0, duration: 0.7, delay: 0.25, ease: 'power3.out' }
+  1438|      );
+  1439|
+  1440|      /* h1 line reveal */
+  1441|      gsap.fromTo('.hero h1 .rl-inner',
+  1442|        { yPercent: 110, opacity: 0 },
+  1443|        { yPercent: 0, opacity: 1, duration: 1, delay: 0.45, stagger: 0.1, ease: 'power4.out' }
+  1444|      );
+  1445|
+  1446|      /* Sub + CTA */
+  1447|      gsap.fromTo('#hero-sub',
+  1448|        { opacity: 0, y: 20 },
+  1449|        { opacity: 1, y: 0, duration: 0.8, delay: 0.85, ease: 'power3.out' }
+  1450|      );
+  1451|      gsap.fromTo('#hero-ctas .btn',
+  1452|        { opacity: 0, y: 16 },
+  1453|        { opacity: 1, y: 0, duration: 0.7, delay: 1.0, stagger: 0.1, ease: 'power3.out' }
+  1454|      );
+  1455|
+  1456|      /* Stats */
+  1457|      gsap.fromTo('#hero-stats .stat-block',
+  1458|        { opacity: 0, y: 24 },
+  1459|        { opacity: 1, y: 0, duration: 0.7, delay: 0.9, stagger: 0.12, ease: 'power3.out' }
+  1460|      );
+  1461|
+  1462|      /* Navbar logo */
+  1463|      gsap.to('.logo', { opacity: 1, duration: 0.6, delay: 0.1, ease: 'power2.out' });
+  1464|      gsap.to('.nav-right', { opacity: 1, duration: 0.6, delay: 0.2, ease: 'power2.out' });
+  1465|
+  1466|      /* WA fab */
+  1467|      gsap.to('#wa-fab', { opacity: 1, scale: 1, duration: 0.6, delay: 1.4, ease: 'back.out(2)' });
+  1468|    } else {
+  1469|      /* reduced motion: just show everything */
+  1470|      gsap.set(['.logo', '.nav-right', '#wa-fab', '#hero-sub', '#hero-ctas .btn',
+  1471|                 '#hero-stats .stat-block', heroTag, '.hero h1 .rl-inner'], { opacity: 1, clearProps: 'transform' });
+  1472|    }
+  1473|
+  1474|    /* ── Stat counter ──────────────────────── */
+  1475|    document.querySelectorAll('.counter').forEach(el => {
+  1476|      const target = parseInt(el.dataset.target, 10);
+  1477|      ScrollTrigger.create({
+  1478|        trigger: el,
+  1479|        start: 'top 85%',
+  1480|        once: true,
+  1481|        onEnter: () => {
+  1482|          gsap.fromTo(el, { innerText: 0 }, {
+  1483|            innerText: target,
+  1484|            duration: 1.8,
+  1485|            ease: 'power2.out',
+  1486|            snap: { innerText: 1 },
+  1487|            onUpdate() { el.textContent = Math.ceil(parseFloat(el.textContent)); }
+  1488|          });
+  1489|        }
+  1490|      });
+  1491|    });
+  1492|
+  1493|    /* ── Ticker (GSAP) ─────────────────────── */
+  1494|    const track = document.getElementById('ticker-track');
+  1495|    if (track) {
+  1496|      const totalW = track.scrollWidth / 2; // half because content is doubled
+  1497|      gsap.to(track, {
+  1498|        x: -totalW,
+  1499|        duration: 28,
+  1500|        repeat: -1,
+  1501|        ease: 'none',
+  1502|        modifiers: {
+  1503|          x: gsap.utils.unitize(v => parseFloat(v) % totalW)
+  1504|        }
+  1505|      });
+  1506|    }
+  1507|
+  1508|    /* ── Section reveal lines (servicios / proceso) ── */
+  1509|    if (!prefersReduced) {
+  1510|      gsap.utils.toArray('.s-title .rl-inner, .cta-big .rl-inner').forEach(el => {
+  1511|        gsap.fromTo(el,
+  1512|          { yPercent: 110, opacity: 0 },
+  1513|          {
+  1514|            yPercent: 0, opacity: 1,
+  1515|            duration: 0.9, ease: 'power4.out',
+  1516|            scrollTrigger: { trigger: el, start: 'top 88%', toggleActions: 'play none none none' }
+  1517|          }
+  1518|        );
+  1519|      });
+  1520|
+  1521|      /* Cards stagger */
+  1522|      gsap.from('.card',
+  1523|        {
+  1524|          y: 48,
+  1525|          duration: 0.75, stagger: 0.13, ease: 'power3.out',
+  1526|          scrollTrigger: { trigger: '.cards-grid', start: 'top 80%' }
+  1527|        }
+  1528|      );
+  1529|
+  1530|      /* Steps stagger */
+  1531|      gsap.from('.step',
+  1532|        {
+  1533|          y: 36,
+  1534|          duration: 0.65, stagger: 0.1, ease: 'power3.out',
+  1535|          scrollTrigger: { trigger: '.proceso-steps', start: 'top 82%' }
+  1536|        }
+  1537|      );
+  1538|
+  1539|      /* Footer fade */
+  1540|      gsap.from('footer',
+  1541|        {
+  1542|          y: 20,
+  1543|          duration: 0.8, ease: 'power2.out',
+  1544|          scrollTrigger: { trigger: 'footer', start: 'top 90%' }
+  1545|        }
+  1546|      );
+  1547|    }
+  1548|
+  1549|    /* ── Hero glow parallax ────────────────── */
+  1550|    if (!prefersReduced) {
+  1551|      gsap.to('.hero-glow', {
+  1552|        y: 120,
+  1553|        ease: 'none',
+  1554|        scrollTrigger: { trigger: '.hero', start: 'top top', end: 'bottom top', scrub: true }
+  1555|      });
+  1556|      gsap.to('.hero-wm', {
+  1557|        y: 80,
+  1558|        ease: 'none',
+  1559|        scrollTrigger: { trigger: '.hero', start: 'top top', end: 'bottom top', scrub: true }
+  1560|      });
+  1561|    }
+  1562|
+  1563|    /* Off-canvas menu toggle */
+  1564|    const navToggle = document.getElementById('navToggle');
+  1565|    const offcanvasMenu = document.getElementById('offcanvasMenu');
+  1566|    const offcanvasOverlay = document.getElementById('offcanvasOverlay');
+  1567|    const offcanvasClose = document.getElementById('offcanvasClose');
+  1568|
+  1569|    function openOffcanvas() {
+  1570|      offcanvasMenu.classList.add('active');
+  1571|      offcanvasOverlay.classList.add('active');
+  1572|      navToggle.classList.add('active');
+  1573|      navToggle.setAttribute('aria-expanded', 'true');
+  1574|      offcanvasMenu.setAttribute('aria-hidden', 'false');
+  1575|      document.body.style.overflow = 'hidden';
+  1576|    }
+  1577|    function closeOffcanvas() {
+  1578|      offcanvasMenu.classList.remove('active');
+  1579|      offcanvasOverlay.classList.remove('active');
+  1580|      navToggle.classList.remove('active');
+  1581|      navToggle.setAttribute('aria-expanded', 'false');
+  1582|      offcanvasMenu.setAttribute('aria-hidden', 'true');
+  1583|      document.body.style.overflow = '';
+  1584|    }
+  1585|
+  1586|    if (navToggle && offcanvasMenu) {
+  1587|      navToggle.addEventListener('click', () => {
+  1588|        const isOpen = offcanvasMenu.classList.contains('active');
+  1589|        isOpen ? closeOffcanvas() : openOffcanvas();
+  1590|      });
+  1591|      offcanvasClose.addEventListener('click', closeOffcanvas);
+  1592|      offcanvasOverlay.addEventListener('click', closeOffcanvas);
+  1593|      offcanvasMenu.querySelectorAll('a').forEach(link => {
+  1594|        link.addEventListener('click', closeOffcanvas);
+  1595|      });
+  1596|      document.addEventListener('keydown', (e) => {
+  1597|        if (e.key === 'Escape' && offcanvasMenu.classList.contains('active')) closeOffcanvas();
+  1598|      });
+  1599|    }
+  1600|
+  1601|  })();
+  1602|  </script>
+  1603|</body>
+  1604|</html>
+  1605|
