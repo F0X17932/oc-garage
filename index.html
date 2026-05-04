@@ -81,9 +81,9 @@
       --c-dark-3:  #2A2A2A;
       --c-mid:     #7A7A7A;
       --c-light:   #EFEFEF;
-      --c-red:     #C01820;
-      --c-red-dk:  #9A1219;
-      --c-red-glow:rgba(192,24,32,0.18);
+      --c-accent:     #9FBA2C;
+      --c-accent-dk:  #7A9420;
+      --c-accent-glow:rgba(159,186,44,0.18);
       --f-disp:    'Big Shoulders Display', sans-serif;
       --f-body:    'Work Sans', sans-serif;
       --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
@@ -131,12 +131,12 @@
     }
     #cursor-dot {
       width: 6px; height: 6px;
-      background: var(--c-red);
+      background: var(--c-accent);
       top: 0; left: 0;
     }
     #cursor-ring {
       width: 36px; height: 36px;
-      border: 1.5px solid rgba(192,24,32,0.5);
+      border: 1.5px solid rgba(159,186,44,0.5);
       top: 0; left: 0;
       transition: width 0.25s var(--ease-out-expo),
                   height 0.25s var(--ease-out-expo),
@@ -144,7 +144,7 @@
     }
     #cursor-ring.hover {
       width: 56px; height: 56px;
-      border-color: var(--c-red);
+      border-color: var(--c-accent);
     }
     @media (hover: none) {
       #cursor-dot, #cursor-ring { display: none; }
@@ -209,8 +209,8 @@
     .btn:hover { transform: translateY(-3px); }
     .btn:hover::after { opacity: 1; }
 
-    .btn-red  { background: var(--c-red); color: #fff; }
-    .btn-red:hover { box-shadow: 0 12px 32px rgba(192,24,32,0.4); }
+    .btn-accent  { background: var(--c-accent); color: #fff; }
+    .btn-accent:hover { box-shadow: 0 12px 32px rgba(159,186,44,0.4); }
 
     .btn-ghost {
       background: transparent;
@@ -335,7 +335,7 @@
       position: absolute;
       top: 15%; right: -5%;
       width: 700px; height: 700px;
-      background: radial-gradient(circle, rgba(192,24,32,0.15) 0%, transparent 65%);
+      background: radial-gradient(circle, rgba(159,186,44,0.15) 0%, transparent 65%);
       z-index: 0;
       pointer-events: none;
     }
@@ -366,7 +366,7 @@
       top: 0; right: 22%;
       width: 1px;
       height: 100%;
-      background: linear-gradient(to bottom, transparent, rgba(192,24,32,0.3) 40%, transparent);
+      background: linear-gradient(to bottom, transparent, rgba(159,186,44,0.3) 40%, transparent);
       z-index: 0;
     }
 
@@ -391,7 +391,7 @@
       font-weight: 600;
       letter-spacing: 0.28em;
       text-transform: uppercase;
-      color: var(--c-red);
+      color: var(--c-accent);
       margin-bottom: 28px;
       overflow: hidden;
     }
@@ -399,7 +399,7 @@
       content: '';
       display: block;
       width: 28px; height: 1.5px;
-      background: var(--c-red);
+      background: var(--c-accent);
       transform: scaleX(0);
       transform-origin: left;
     }
@@ -422,7 +422,7 @@
     }
     .hero h1 em {
       font-style: normal;
-      color: var(--c-red);
+      color: var(--c-accent);
     }
 
     .hero-sub {
@@ -467,7 +467,7 @@
     }
     .stat-num sup {
       font-size: 0.45em;
-      color: var(--c-red);
+      color: var(--c-accent);
       font-weight: 900;
     }
     .stat-label {
@@ -482,7 +482,7 @@
        TICKER / PILARES
     ══════════════════════════════════════ */
     .ticker-wrap {
-      background: var(--c-red);
+      background: var(--c-accent);
       padding: 16px 0;
       overflow: hidden;
       position: relative;
@@ -535,14 +535,14 @@
       font-weight: 600;
       letter-spacing: 0.28em;
       text-transform: uppercase;
-      color: var(--c-red);
+      color: var(--c-accent);
       margin-bottom: 14px;
     }
     .s-tag::before {
       content: '';
       display: block;
       width: 24px; height: 1.5px;
-      background: var(--c-red);
+      background: var(--c-accent);
     }
 
     .s-title {
@@ -552,7 +552,7 @@
       line-height: 0.9;
       text-transform: uppercase;
     }
-    .s-title em { font-style: normal; color: var(--c-red); }
+    .s-title em { font-style: normal; color: var(--c-accent); }
 
     .s-desc {
       font-size: 0.95rem;
@@ -580,7 +580,7 @@
       position: absolute;
       bottom: 0; left: 0;
       width: 100%; height: 2px;
-      background: var(--c-red);
+      background: var(--c-accent);
       transform: scaleX(0);
       transform-origin: left;
       transition: transform 0.4s var(--ease-out-expo);
@@ -590,7 +590,7 @@
       position: absolute;
       top: 0; right: 0;
       width: 140px; height: 140px;
-      background: radial-gradient(circle, var(--c-red-glow), transparent 70%);
+      background: radial-gradient(circle, var(--c-accent-glow), transparent 70%);
       opacity: 0;
       transition: opacity 0.4s;
       pointer-events: none;
@@ -604,25 +604,25 @@
       font-weight: 900;
       font-size: 5rem;
       line-height: 1;
-      color: rgba(192,24,32,0.1);
+      color: rgba(159,186,44,0.1);
       position: absolute;
       top: 24px; right: 28px;
       transition: color 0.3s;
     }
-    .card:hover .card-num { color: rgba(192,24,32,0.2); }
+    .card:hover .card-num { color: rgba(159,186,44,0.2); }
 
     .card-icon {
       width: 48px; height: 48px;
-      border: 1px solid rgba(192,24,32,0.3);
+      border: 1px solid rgba(159,186,44,0.3);
       border-radius: 2px;
       display: flex; align-items: center; justify-content: center;
-      color: var(--c-red);
+      color: var(--c-accent);
       margin-bottom: 28px;
       transition: background 0.3s, border-color 0.3s;
     }
     .card:hover .card-icon {
-      background: rgba(192,24,32,0.1);
-      border-color: var(--c-red);
+      background: rgba(159,186,44,0.1);
+      border-color: var(--c-accent);
     }
 
     .card-title {
@@ -649,7 +649,7 @@
       content: '';
       display: block;
       width: 4px; height: 4px;
-      background: var(--c-red);
+      background: var(--c-accent);
       border-radius: 50%;
       flex-shrink: 0;
     }
@@ -686,7 +686,7 @@
       font-size: 0.65rem;
       letter-spacing: 0.2em;
       text-transform: uppercase;
-      color: var(--c-red);
+      color: var(--c-accent);
       margin-bottom: 14px;
     }
     .step-title {
@@ -716,7 +716,7 @@
       content: '';
       position: absolute;
       inset: 0;
-      background: radial-gradient(ellipse 80% 100% at 50% 50%, rgba(192,24,32,0.08) 0%, transparent 70%);
+      background: radial-gradient(ellipse 80% 100% at 50% 50%, rgba(159,186,44,0.08) 0%, transparent 70%);
       pointer-events: none;
     }
     .cta-section .container { position: relative; z-index: 1; }
@@ -730,7 +730,7 @@
       color: var(--c-light);
       margin-bottom: 16px;
     }
-    .cta-big em { font-style: normal; color: var(--c-red); }
+    .cta-big em { font-style: normal; color: var(--c-accent); }
 
     .cta-sub {
       font-size: 1rem;
@@ -773,7 +773,7 @@
       font-weight: 600;
       letter-spacing: 0.22em;
       text-transform: uppercase;
-      color: var(--c-red);
+      color: var(--c-accent);
       margin-bottom: 20px;
     }
     .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
@@ -795,7 +795,7 @@
       font-size: 0.75rem;
       color: rgba(122,122,122,0.6);
     }
-    .footer-bottom a { color: var(--c-red); }
+    .footer-bottom a { color: var(--c-accent); }
 
     /* ══════════════════════════════════════
        FLOATING WA
@@ -821,7 +821,7 @@
       position: fixed;
       top: 0; left: 0;
       height: 2px;
-      background: var(--c-red);
+      background: var(--c-accent);
       z-index: 600;
       transform-origin: left;
       transform: scaleX(0);
@@ -893,14 +893,14 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      background: var(--c-red);
+      background: var(--c-accent);
       border: none;
       border-radius: 2px;
       cursor: pointer;
       z-index: 1000;
       transition: background 0.2s, transform 0.2s;
     }
-    .offcanvas-close:hover { background: var(--c-red-dk); transform: scale(1.05); }
+    .offcanvas-close:hover { background: var(--c-accent-dk); transform: scale(1.05); }
     .offcanvas-close svg {
       width: 18px;
       height: 18px;
@@ -920,8 +920,8 @@
       border-bottom: 1px solid rgba(255,255,255,0.06);
       transition: color 0.2s, padding-left 0.2s;
     }
-    .offcanvas-menu a:hover { color: var(--c-red); padding-left: 8px; }
-    .offcanvas-menu .btn-red {
+    .offcanvas-menu a:hover { color: var(--c-accent); padding-left: 8px; }
+    .offcanvas-menu .btn-accent {
       font-size: 1.1rem;
       padding: 18px 40px;
       margin-top: 24px;
@@ -1068,7 +1068,7 @@
     .contacto-info-item svg {
       flex-shrink: 0;
       margin-top: 2px;
-      color: var(--c-red);
+      color: var(--c-accent);
     }
     .contacto-info-item strong {
       color: var(--c-light);
@@ -1084,7 +1084,7 @@
       text-decoration: none;
       transition: color 0.2s;
     }
-    .contacto-info-item a:hover { color: var(--c-red); }
+    .contacto-info-item a:hover { color: var(--c-accent); }
 
     .contacto-form {
       display: flex;
@@ -1113,8 +1113,8 @@
     }
     .contacto-form input:focus,
     .contacto-form textarea:focus {
-      border-color: var(--c-red);
-      box-shadow: 0 0 0 3px rgba(192,24,32,0.12);
+      border-color: var(--c-accent);
+      box-shadow: 0 0 0 3px rgba(159,186,44,0.12);
     }
     .contacto-form input::placeholder,
     .contacto-form textarea::placeholder {
@@ -1181,7 +1181,7 @@
               </svg>
               @ocgarage.mdp
             </a>
-            <a class="btn btn-red" href="https://wa.me/5492236856543?text=Hola!%20Quiero%20consultar%20un%20presupuesto" target="_blank" rel="noopener noreferrer">Presupuesto</a>
+            <a class="btn btn-accent" href="https://wa.me/5492236856543?text=Hola!%20Quiero%20consultar%20un%20presupuesto" target="_blank" rel="noopener noreferrer">Presupuesto</a>
           </div>
           <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
             <span></span>
@@ -1208,7 +1208,7 @@
     <a href="#proceso">Proceso</a>
     <a href="#contacto">Contacto</a>
     <a href="https://instagram.com/ocgarage.mdp" target="_blank" rel="noopener noreferrer">Instagram</a>
-    <a class="btn btn-red" href="https://wa.me/5492236856543?text=Hola!%20Quiero%20consultar%20un%20presupuesto" target="_blank" rel="noopener noreferrer">Pedir Presupuesto</a>
+    <a class="btn btn-accent" href="https://wa.me/5492236856543?text=Hola!%20Quiero%20consultar%20un%20presupuesto" target="_blank" rel="noopener noreferrer">Pedir Presupuesto</a>
     <div class="offcanvas-footer">Mar del Plata · Est. 1997</div>
   </div>
 
@@ -1496,7 +1496,7 @@
               <label for="cf-mensaje">Mensaje</label>
               <textarea id="cf-mensaje" name="mensaje" placeholder="¿En qué podemos ayudarte?" required></textarea>
 
-              <button type="submit" class="btn btn-red">Enviar por WhatsApp</button>
+              <button type="submit" class="btn btn-accent">Enviar por WhatsApp</button>
             </form>
           </div>
         </div>
