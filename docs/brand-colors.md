@@ -4,10 +4,10 @@
 
 | Formato | Valor |
 |---------|-------|
-| **HEX** | `#9FBA2C` |
 | **Pantone** | `374 U` |
-| **RGB** | `159, 186, 44` |
-| **CMYK** | `36, 0, 95, 9` |
+| **HEX** | `#A2E360` |
+| **RGB** | `162, 227, 96` |
+| **CMYK** | `29, 0, 58, 11` |
 | **Nombre** | Verde lima / Chartreuse industrial |
 
 **Origen:** Extraído del carro de herramientas Kroner (cajones verdes).  
@@ -27,9 +27,9 @@
 | `--c-mid` | `#7A7A7A` | Texto secundario |
 | `--c-light` | `#EFEFEF` | Texto principal |
 | `--c-accent-dk` | `#7A9420` | Hover, estados activos |
-| `--c-accent-glow` | `rgba(159,186,44,0.18)` | Glows, gradientes suaves |
+| `--c-accent-glow` | `rgba(162,227,96,0.18)` | Glows, gradientes suaves |
 
 ---
 
 *Última actualización: 2026-05-04*  
-*Commit ref: `8e3fe98` — cambio rojo `#C01820` → verde lima `#9FBA2C`*
+*Commit ref: `8e3fe98` — cambio rojo `#C01820` → verde lima `#A2E360`*
