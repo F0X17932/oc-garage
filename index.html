@@ -313,11 +313,10 @@
     ══════════════════════════════════════ */
     .hero {
       position: relative;
-      min-height: 70svh;
+      min-height: auto;
       display: flex;
       align-items: flex-start;
       overflow: hidden;
-      padding-top: 24px;
     }
 
     /* Grid lines background */
@@ -376,7 +375,7 @@
       position: relative;
       z-index: 1;
       padding-bottom: 80px;
-      padding-top: 20px;
+      padding-top: 100px;
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 0 64px;
@@ -979,7 +978,7 @@
     }
 
     @media (max-width: 768px) {
-      .hero { min-height: auto; padding: 40px 0 60px; }
+      .hero { min-height: auto; padding: 90px 0 60px; }
       .hero .container { gap: 40px; }
       .hero h1 { font-size: clamp(42px, 13vw, 72px); line-height: 0.92; }
       .hero-sub { font-size: 1rem; }
