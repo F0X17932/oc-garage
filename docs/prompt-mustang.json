@@ -1,0 +1,53 @@
+{
+  "descripcion_general": "Gráfico promocional para un taller de carrocería y pintura automotriz, con un estilo industrial y de alto contraste.",
+  "entidad": {
+    "nombre": "OC GARAGE",
+    "especialidad": "Chapa y Pintura",
+    "ubicacion": "Mar del Plata, Argentina"
+  },
+  "elementos_visuales": {
+    "vehiculo": {
+      "modelo": "Ford Mustang (S550)",
+      "estado": "En proceso de restauración/modificación",
+      "detalles": [
+        "Color rojo brillante con capó negro",
+        "Puerta del conductor removida mostrando la estructura interna del chasis",
+        "Parachoques delantero parcialmente desmontado",
+        "Llantas de aleación color negro mate"
+      ]
+    },
+    "herramientas": {
+      "objeto": "Pistola de pintura de gravedad (HVLP)",
+      "accion": "Pulverizando pintura roja hacia el centro de la imagen",
+      "posicion": "Parte superior central, flotando sobre el logo"
+    },
+    "fondo": {
+      "ambiente": "Garaje oscuro de estilo industrial",
+      "iluminacion": "Luces de neón rojas, sombras profundas y destellos atmosféricos",
+      "graficos": "Patrones hexagonales rojos que enmarcan la composición"
+    }
+  },
+  "tipografia_y_texto": {
+    "titular_principal": {
+      "texto": "OC GARAGE",
+      "estilo": {
+        "OC": "Blanco, fuente gruesa con textura de desgaste/grunge",
+        "GARAGE": "Rojo, fuente sans-serif audaz y limpia"
+      }
+    },
+    "subtitulo": {
+      "texto": "CHAPA Y PINTURA • MAR DEL PLATA",
+      "estilo": "Blanco, fuente sans-serif simplificada, letras espaciadas"
+    }
+  },
+  "paleta_colores": {
+    "primarios": ["#FF0000 (Rojo vibrante)", "#000000 (Negro profundo)"],
+    "secundarios": ["#FFFFFF (Blanco)", "#A9A9A9 (Gris metálico)"],
+    "acentos": ["Rojo neón", "Efecto de brillo metálico"]
+  },
+  "composicion_artistica": {
+    "enfoque": "Central",
+    "perspectiva": "Angulo bajo (Contrapicado) para dar imponencia al vehículo",
+    "estilo_grafico": "Poster publicitario moderno / Automotive CGI"
+  }
+}
