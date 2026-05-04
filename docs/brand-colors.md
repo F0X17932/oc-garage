@@ -5,12 +5,13 @@
 | Formato | Valor |
 |---------|-------|
 | **HEX** | `#9FBA2C` |
-| **Pantone** | `7745 C` |
+| **Pantone** | `374 U` |
 | **RGB** | `159, 186, 44` |
 | **CMYK** | `36, 0, 95, 9` |
 | **Nombre** | Verde lima / Chartreuse industrial |
 
 **Origen:** Extraído del carro de herramientas Kroner (cajones verdes).  
+**Referencia Pantone:** Verificado físicamente con paleta Pantone Uncoated por diseñadora.  
 **Uso:** Botones, acentos de texto, bordes, gradientes, cursor personalizado, ticker.
 
 ---
